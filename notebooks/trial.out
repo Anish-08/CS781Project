@@ -1,0 +1,75 @@
+
+
+
+
+
+
+
+
+
+
+pygame 2.6.1 (SDL 2.28.4, Python 3.10.4)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Starting the training
+<PIL.Image.Image image mode=RGB size=480x480 at 0x79A07E1F7C40>
+Directory created successfully: /opt/notebooks/shielding_files_20241117T192540_zkiti_4g
+/opt/Minigrid2PRISM/build/main -i /opt/notebooks/shielding_files_20241117T192540_zkiti_4g/grid.txt -o /opt/notebooks/shielding_files_20241117T192540_zkiti_4g/grid.prism
+Computing new shield
+LOG: Starting with explicit model creation...
+Elapsed time is 0.06672430038452148 seconds.
+LOG: Starting with model checking...
+Elapsed time is 0.008889913558959961 seconds.
+LOG: Starting to translate shield...
+Elapsed time is 0.14633440971374512 seconds.
+Directory created successfully: /opt/notebooks/shielding_files_20241117T192540_mpllzqcc
+/opt/Minigrid2PRISM/build/main -i /opt/notebooks/shielding_files_20241117T192540_mpllzqcc/grid.txt -o /opt/notebooks/shielding_files_20241117T192540_mpllzqcc/grid.prism
+Computing new shield
+LOG: Starting with explicit model creation...
+Elapsed time is 0.06502270698547363 seconds.
+LOG: Starting with model checking...
+Elapsed time is 0.008633852005004883 seconds.
+LOG: Starting to translate shield...
+Elapsed time is 0.14154887199401855 seconds.
+Directory created successfully: /opt/notebooks/shielding_files_20241117T192540_30e_wv4f
+/opt/Minigrid2PRISM/build/main -i /opt/notebooks/shielding_files_20241117T192540_30e_wv4f/grid.txt -o /opt/notebooks/shielding_files_20241117T192540_30e_wv4f/grid.prism
+Computing new shield
+LOG: Starting with explicit model creation...
+Elapsed time is 0.06400799751281738 seconds.
+LOG: Starting with model checking...
+Elapsed time is 0.008719921112060547 seconds.
+LOG: Starting to translate shield...
+Elapsed time is 0.1383056640625 seconds.
+Directory created successfully: /opt/notebooks/shielding_files_20241117T192541_bo17rhyq
+/opt/Minigrid2PRISM/build/main -i /opt/notebooks/shielding_files_20241117T192541_bo17rhyq/grid.txt -o /opt/notebooks/shielding_files_20241117T192541_bo17rhyq/grid.prism
+Computing new shield
+LOG: Starting with explicit model creation...
+Elapsed time is 0.06354475021362305 seconds.
+LOG: Starting with model checking...
+Elapsed time is 0.00858759880065918 seconds.
+LOG: Starting to translate shield...
+Elapsed time is 0.13862228393554688 seconds.
+Directory created successfully: /opt/notebooks/shielding_files_20241117T192541_8cpdljcp
+/opt/Minigrid2PRISM/build/main -i /opt/notebooks/shielding_files_20241117T192541_8cpdljcp/grid.txt -o /opt/notebooks/shielding_files_20241117T192541_8cpdljcp/grid.prism
+Computing new shield
+LOG: Starting with explicit model creation...
+Elapsed time is 0.0648193359375 seconds.
+LOG: Starting with model checking...
+Elapsed time is 0.009482383728027344 seconds.
+LOG: Starting to translate shield...
+Elapsed time is 0.1360950469970703 seconds.
+Image saved as shield_overlay_image.png
+The shield for shield_value = 0.0
+Image saved as shield_overlay_image.png
+The shield for shield_value = 0.9
+Image saved as shield_overlay_image.png
+The shield for shield_value = 0.99
+Image saved as shield_overlay_image.png
+The shield for shield_value = 0.999
+Image saved as shield_overlay_image.png
+The shield for shield_value = 1.0
+Training with shield:
+Image saved as shield_overlay_image.png
+Using cpu device
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.

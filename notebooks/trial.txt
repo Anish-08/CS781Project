@@ -1,0 +1,53 @@
+
+
+
+
+
+
+
+
+
+
+pygame 2.6.1 (SDL 2.28.4, Python 3.10.4)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Starting the training
+<PIL.Image.Image image mode=RGB size=256x256 at 0x754C217F15D0>
+Directory created successfully: /opt/notebooks/shielding_files_20241117T170454_k2x56tfr
+Computing new shield
+LOG: Starting with explicit model creation...
+Elapsed time is 1.3244328498840332 seconds.
+LOG: Starting with model checking...
+Elapsed time is 0.2671680450439453 seconds.
+LOG: Starting to translate shield...
+Elapsed time is 4.767760992050171 seconds.
+Directory created successfully: /opt/notebooks/shielding_files_20241117T170501_i8xi67cf
+Computing new shield
+LOG: Starting with explicit model creation...
+Elapsed time is 1.2544705867767334 seconds.
+LOG: Starting with model checking...
+Elapsed time is 0.2878234386444092 seconds.
+LOG: Starting to translate shield...
+Elapsed time is 4.832283973693848 seconds.
+Directory created successfully: /opt/notebooks/shielding_files_20241117T170507_f62wu7n4
+Computing new shield
+LOG: Starting with explicit model creation...
+Elapsed time is 1.2385282516479492 seconds.
+LOG: Starting with model checking...
+Elapsed time is 0.27013349533081055 seconds.
+LOG: Starting to translate shield...
+Elapsed time is 4.556031703948975 seconds.
+Directory created successfully: /opt/notebooks/shielding_files_20241117T170513_x6g57cdg
+Computing new shield
+LOG: Starting with explicit model creation...
+Elapsed time is 1.2468371391296387 seconds.
+LOG: Starting with model checking...
+Elapsed time is 0.2595353126525879 seconds.
+LOG: Starting to translate shield...
+Elapsed time is 4.656583309173584 seconds.
+Directory created successfully: /opt/notebooks/shielding_files_20241117T170520_ne24tb6q
+Computing new shield
+LOG: Starting with explicit model creation...
+Elapsed time is 1.2557077407836914 seconds.
+LOG: Starting with model checking...
+Elapsed time is 0.3382411003112793 seconds.
+LOG: Starting to translate shield...

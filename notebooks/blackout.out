@@ -1,0 +1,380 @@
+2024-11-16 20:17:01.050835: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1731788221.145950  349263 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1731788221.170918  349263 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2024-11-16 20:17:01.377281: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+
+
+
+
+
+
+
+
+
+
+pygame 2.6.1 (SDL 2.28.4, Python 3.10.4)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Starting the training
+<PIL.Image.Image image mode=RGB size=480x480 at 0x7562003FBDF0>
+Directory created successfully: /opt/notebooks/shielding_files_20241116T201707_mtjml_1n
+Computing new shield
+LOG: Starting with explicit model creation...
+Elapsed time is 0.052477359771728516 seconds.
+LOG: Starting with model checking...
+Elapsed time is 0.002188444137573242 seconds.
+LOG: Starting to translate shield...
+Elapsed time is 0.09696435928344727 seconds.
+Directory created successfully: /opt/notebooks/shielding_files_20241116T201707_pn2_4d69
+Computing new shield
+LOG: Starting with explicit model creation...
+Elapsed time is 0.05065131187438965 seconds.
+LOG: Starting with model checking...
+Elapsed time is 0.0020177364349365234 seconds.
+LOG: Starting to translate shield...
+Elapsed time is 0.09296059608459473 seconds.
+Directory created successfully: /opt/notebooks/shielding_files_20241116T201707_gfv92p0m
+Computing new shield
+LOG: Starting with explicit model creation...
+Elapsed time is 0.05144453048706055 seconds.
+LOG: Starting with model checking...
+Elapsed time is 0.001999378204345703 seconds.
+LOG: Starting to translate shield...
+Elapsed time is 0.0934760570526123 seconds.
+Directory created successfully: /opt/notebooks/shielding_files_20241116T201707_smyvlrd6
+Computing new shield
+LOG: Starting with explicit model creation...
+Elapsed time is 0.049764156341552734 seconds.
+LOG: Starting with model checking...
+Elapsed time is 0.0020487308502197266 seconds.
+LOG: Starting to translate shield...
+Elapsed time is 0.0923008918762207 seconds.
+Directory created successfully: /opt/notebooks/shielding_files_20241116T201708_qj5dwsne
+Computing new shield
+LOG: Starting with explicit model creation...
+Elapsed time is 0.053038597106933594 seconds.
+LOG: Starting with model checking...
+Elapsed time is 0.0020143985748291016 seconds.
+LOG: Starting to translate shield...
+Elapsed time is 0.09320235252380371 seconds.
+Image saved as shield_overlay_image.png
+The shield for shield_value = 0.0
+Image saved as shield_overlay_image.png
+The shield for shield_value = 0.9
+Image saved as shield_overlay_image.png
+The shield for shield_value = 0.99
+Image saved as shield_overlay_image.png
+The shield for shield_value = 0.999
+Image saved as shield_overlay_image.png
+The shield for shield_value = 1.0
+Training with shield:
+Image saved as shield_overlay_image.png
+Using cpu device
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+-----------------------------------
+| info/                |          |
+|    no_shield_action  | 0        |
+|    sum_opened_door   | 0        |
+|    sum_picked_up     | 0        |
+|    sum_ran_into_lava | 73       |
+|    sum_reached_goal  | 2        |
+| rollout/             |          |
+|    ep_len_mean       | 25.7     |
+|    ep_rew_mean       | -0.947   |
+| time/                |          |
+|    fps               | 134      |
+|    iterations        | 1        |
+|    time_elapsed      | 15       |
+|    total_timesteps   | 2048     |
+-----------------------------------
+-------------------------------------------
+| info/                   |               |
+|    no_shield_action     | 0             |
+|    sum_opened_door      | 0             |
+|    sum_picked_up        | 0             |
+|    sum_ran_into_lava    | 130           |
+|    sum_reached_goal     | 9             |
+| rollout/                |               |
+|    ep_len_mean          | 29.8          |
+|    ep_rew_mean          | -0.81         |
+| time/                   |               |
+|    fps                  | 90            |
+|    iterations           | 2             |
+|    time_elapsed         | 45            |
+|    total_timesteps      | 4096          |
+| train/                  |               |
+|    approx_kl            | 0.011036659   |
+|    clip_fraction        | 0.157         |
+|    clip_range           | 0.2           |
+|    entropy_loss         | -1.06         |
+|    explained_variance   | -0.0021848679 |
+|    learning_rate        | 0.0003        |
+|    loss                 | -0.00131      |
+|    n_updates            | 10            |
+|    policy_gradient_loss | -0.0215       |
+|    value_loss           | 0.157         |
+-------------------------------------------
+-----------------------------------------
+| info/                   |             |
+|    no_shield_action     | 0           |
+|    sum_opened_door      | 0           |
+|    sum_picked_up        | 0           |
+|    sum_ran_into_lava    | 152         |
+|    sum_reached_goal     | 13          |
+| rollout/                |             |
+|    ep_len_mean          | 43.4        |
+|    ep_rew_mean          | -0.75       |
+| time/                   |             |
+|    fps                  | 81          |
+|    iterations           | 3           |
+|    time_elapsed         | 75          |
+|    total_timesteps      | 6144        |
+| train/                  |             |
+|    approx_kl            | 0.028845945 |
+|    clip_fraction        | 0.201       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.04       |
+|    explained_variance   | 0.15382689  |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.033      |
+|    n_updates            | 20          |
+|    policy_gradient_loss | -0.0337     |
+|    value_loss           | 0.0535      |
+-----------------------------------------
+-----------------------------------------
+| info/                   |             |
+|    no_shield_action     | 0           |
+|    sum_opened_door      | 0           |
+|    sum_picked_up        | 0           |
+|    sum_ran_into_lava    | 160         |
+|    sum_reached_goal     | 14          |
+| rollout/                |             |
+|    ep_len_mean          | 56.7        |
+|    ep_rew_mean          | -0.71       |
+| time/                   |             |
+|    fps                  | 77          |
+|    iterations           | 4           |
+|    time_elapsed         | 105         |
+|    total_timesteps      | 8192        |
+| train/                  |             |
+|    approx_kl            | 0.033643816 |
+|    clip_fraction        | 0.392       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.979      |
+|    explained_variance   | 0.39422083  |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.045      |
+|    n_updates            | 30          |
+|    policy_gradient_loss | -0.0495     |
+|    value_loss           | 0.0277      |
+-----------------------------------------
+-----------------------------------------
+| info/                   |             |
+|    no_shield_action     | 0           |
+|    sum_opened_door      | 0           |
+|    sum_picked_up        | 0           |
+|    sum_ran_into_lava    | 165         |
+|    sum_reached_goal     | 24          |
+| rollout/                |             |
+|    ep_len_mean          | 71.2        |
+|    ep_rew_mean          | -0.47       |
+| time/                   |             |
+|    fps                  | 76          |
+|    iterations           | 5           |
+|    time_elapsed         | 134         |
+|    total_timesteps      | 10240       |
+| train/                  |             |
+|    approx_kl            | 0.028731616 |
+|    clip_fraction        | 0.342       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.924      |
+|    explained_variance   | 0.57413584  |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.0506     |
+|    n_updates            | 40          |
+|    policy_gradient_loss | -0.041      |
+|    value_loss           | 0.013       |
+-----------------------------------------
+-----------------------------------------
+| info/                   |             |
+|    no_shield_action     | 0           |
+|    sum_opened_door      | 0           |
+|    sum_picked_up        | 0           |
+|    sum_ran_into_lava    | 170         |
+|    sum_reached_goal     | 30          |
+| rollout/                |             |
+|    ep_len_mean          | 88          |
+|    ep_rew_mean          | -0.31       |
+| time/                   |             |
+|    fps                  | 74          |
+|    iterations           | 6           |
+|    time_elapsed         | 164         |
+|    total_timesteps      | 12288       |
+| train/                  |             |
+|    approx_kl            | 0.024997551 |
+|    clip_fraction        | 0.3         |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.896      |
+|    explained_variance   | 0.74011374  |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.0561     |
+|    n_updates            | 50          |
+|    policy_gradient_loss | -0.0407     |
+|    value_loss           | 0.0218      |
+-----------------------------------------
+-----------------------------------------
+| info/                   |             |
+|    no_shield_action     | 0           |
+|    sum_opened_door      | 0           |
+|    sum_picked_up        | 0           |
+|    sum_ran_into_lava    | 171         |
+|    sum_reached_goal     | 44          |
+| rollout/                |             |
+|    ep_len_mean          | 99          |
+|    ep_rew_mean          | -0.04       |
+| time/                   |             |
+|    fps                  | 73          |
+|    iterations           | 7           |
+|    time_elapsed         | 193         |
+|    total_timesteps      | 14336       |
+| train/                  |             |
+|    approx_kl            | 0.027181283 |
+|    clip_fraction        | 0.241       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.883      |
+|    explained_variance   | 0.70788467  |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.0399     |
+|    n_updates            | 60          |
+|    policy_gradient_loss | -0.0334     |
+|    value_loss           | 0.013       |
+-----------------------------------------
+----------------------------------------
+| info/                   |            |
+|    no_shield_action     | 0          |
+|    sum_opened_door      | 0          |
+|    sum_picked_up        | 0          |
+|    sum_ran_into_lava    | 177        |
+|    sum_reached_goal     | 62         |
+| rollout/                |            |
+|    ep_len_mean          | 91         |
+|    ep_rew_mean          | 0.27       |
+| time/                   |            |
+|    fps                  | 73         |
+|    iterations           | 8          |
+|    time_elapsed         | 223        |
+|    total_timesteps      | 16384      |
+| train/                  |            |
+|    approx_kl            | 0.03258694 |
+|    clip_fraction        | 0.273      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -0.856     |
+|    explained_variance   | 0.81648326 |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.013     |
+|    n_updates            | 70         |
+|    policy_gradient_loss | -0.0305    |
+|    value_loss           | 0.00653    |
+----------------------------------------
+-----------------------------------------
+| info/                   |             |
+|    no_shield_action     | 0           |
+|    sum_opened_door      | 0           |
+|    sum_picked_up        | 0           |
+|    sum_ran_into_lava    | 179         |
+|    sum_reached_goal     | 80          |
+| rollout/                |             |
+|    ep_len_mean          | 85.6        |
+|    ep_rew_mean          | 0.45        |
+| time/                   |             |
+|    fps                  | 73          |
+|    iterations           | 9           |
+|    time_elapsed         | 251         |
+|    total_timesteps      | 18432       |
+| train/                  |             |
+|    approx_kl            | 0.031255167 |
+|    clip_fraction        | 0.302       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.798      |
+|    explained_variance   | 0.82310724  |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.0372     |
+|    n_updates            | 80          |
+|    policy_gradient_loss | -0.0345     |
+|    value_loss           | 0.0151      |
+-----------------------------------------
+----------------------------------------
+| info/                   |            |
+|    no_shield_action     | 0          |
+|    sum_opened_door      | 0          |
+|    sum_picked_up        | 0          |
+|    sum_ran_into_lava    | 184        |
+|    sum_reached_goal     | 117        |
+| rollout/                |            |
+|    ep_len_mean          | 61.4       |
+|    ep_rew_mean          | 0.6        |
+| time/                   |            |
+|    fps                  | 73         |
+|    iterations           | 10         |
+|    time_elapsed         | 279        |
+|    total_timesteps      | 20480      |
+| train/                  |            |
+|    approx_kl            | 0.02976267 |
+|    clip_fraction        | 0.331      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -0.789     |
+|    explained_variance   | 0.841261   |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.0334    |
+|    n_updates            | 90         |
+|    policy_gradient_loss | -0.0391    |
+|    value_loss           | 0.00991    |
+----------------------------------------
+Exception ignored in: <function MiniGridShieldHandler.__del__ at 0x7562053d49d0>
+Traceback (most recent call last):
+  File "/opt/notebooks/utils.py", line 94, in __del__
+    shutil.rmtree(self.tmp_dir_name)
+  File "/usr/lib/python3.10/shutil.py", line 712, in rmtree
+    onerror(os.lstat, path, sys.exc_info())
+  File "/usr/lib/python3.10/shutil.py", line 710, in rmtree
+    orig_st = os.lstat(path)
+FileNotFoundError: [Errno 2] No such file or directory: '/opt/notebooks/shielding_files_20241116T201707_pn2_4d69'
+Exception ignored in: <function MiniGridShieldHandler.__del__ at 0x7562053d49d0>
+Traceback (most recent call last):
+  File "/opt/notebooks/utils.py", line 94, in __del__
+    shutil.rmtree(self.tmp_dir_name)
+  File "/usr/lib/python3.10/shutil.py", line 712, in rmtree
+    onerror(os.lstat, path, sys.exc_info())
+  File "/usr/lib/python3.10/shutil.py", line 710, in rmtree
+    orig_st = os.lstat(path)
+FileNotFoundError: [Errno 2] No such file or directory: '/opt/notebooks/shielding_files_20241116T201707_gfv92p0m'
+Exception ignored in: <function MiniGridShieldHandler.__del__ at 0x7562053d49d0>
+Traceback (most recent call last):
+  File "/opt/notebooks/utils.py", line 94, in __del__
+    shutil.rmtree(self.tmp_dir_name)
+  File "/usr/lib/python3.10/shutil.py", line 712, in rmtree
+    onerror(os.lstat, path, sys.exc_info())
+  File "/usr/lib/python3.10/shutil.py", line 710, in rmtree
+    orig_st = os.lstat(path)
+FileNotFoundError: [Errno 2] No such file or directory: '/opt/notebooks/shielding_files_20241116T201707_smyvlrd6'
+Exception ignored in: <function MiniGridShieldHandler.__del__ at 0x7562053d49d0>
+Traceback (most recent call last):
+  File "/opt/notebooks/utils.py", line 94, in __del__
+    shutil.rmtree(self.tmp_dir_name)
+  File "/usr/lib/python3.10/shutil.py", line 712, in rmtree
+    onerror(os.lstat, path, sys.exc_info())
+  File "/usr/lib/python3.10/shutil.py", line 710, in rmtree
+    orig_st = os.lstat(path)
+FileNotFoundError: [Errno 2] No such file or directory: '/opt/notebooks/shielding_files_20241116T201708_qj5dwsne'
+Exception ignored in: <function MiniGridShieldHandler.__del__ at 0x7562053d49d0>
+Traceback (most recent call last):
+  File "/opt/notebooks/utils.py", line 94, in __del__
+    shutil.rmtree(self.tmp_dir_name)
+  File "/usr/lib/python3.10/shutil.py", line 712, in rmtree
+    onerror(os.lstat, path, sys.exc_info())
+  File "/usr/lib/python3.10/shutil.py", line 710, in rmtree
+    orig_st = os.lstat(path)
+FileNotFoundError: [Errno 2] No such file or directory: '/opt/notebooks/shielding_files_20241116T201707_mtjml_1n'

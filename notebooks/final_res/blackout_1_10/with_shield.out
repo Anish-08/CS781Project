@@ -1,0 +1,2860 @@
+2024-11-18 16:19:59.865210: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1731946799.886227  106466 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1731946799.892784  106466 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2024-11-18 16:19:59.915441: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+error: XDG_RUNTIME_DIR not set in the environment.
+
+
+
+
+
+
+
+
+
+
+pygame 2.6.1 (SDL 2.28.4, Python 3.10.4)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Starting the training
+<PIL.Image.Image image mode=RGB size=352x288 at 0x73BCF15EC2E0>
+Directory created successfully: /opt/notebooks/shielding_files_20241118T162002_5878e773
+/opt/Minigrid2PRISM/build/main -i /opt/notebooks/shielding_files_20241118T162002_5878e773/grid.txt -o /opt/notebooks/shielding_files_20241118T162002_5878e773/grid.prism
+Computing new shield
+LOG: Starting with explicit model creation...
+Elapsed time is 1.2894134521484375 seconds.
+LOG: Starting with model checking...
+Elapsed time is 0.20288968086242676 seconds.
+LOG: Starting to translate shield...
+Elapsed time is 4.178478717803955 seconds.
+Directory created successfully: /opt/notebooks/shielding_files_20241118T162008_b42axb4w
+/opt/Minigrid2PRISM/build/main -i /opt/notebooks/shielding_files_20241118T162008_b42axb4w/grid.txt -o /opt/notebooks/shielding_files_20241118T162008_b42axb4w/grid.prism
+Computing new shield
+LOG: Starting with explicit model creation...
+Elapsed time is 1.1944811344146729 seconds.
+LOG: Starting with model checking...
+Elapsed time is 0.137237548828125 seconds.
+LOG: Starting to translate shield...
+Elapsed time is 3.616575002670288 seconds.
+Directory created successfully: /opt/notebooks/shielding_files_20241118T162013_di_j1p7_
+/opt/Minigrid2PRISM/build/main -i /opt/notebooks/shielding_files_20241118T162013_di_j1p7_/grid.txt -o /opt/notebooks/shielding_files_20241118T162013_di_j1p7_/grid.prism
+Computing new shield
+LOG: Starting with explicit model creation...
+Elapsed time is 1.1831352710723877 seconds.
+LOG: Starting with model checking...
+Elapsed time is 0.17481565475463867 seconds.
+LOG: Starting to translate shield...
+Elapsed time is 4.057652950286865 seconds.
+Directory created successfully: /opt/notebooks/shielding_files_20241118T162019_p6zu5u2o
+/opt/Minigrid2PRISM/build/main -i /opt/notebooks/shielding_files_20241118T162019_p6zu5u2o/grid.txt -o /opt/notebooks/shielding_files_20241118T162019_p6zu5u2o/grid.prism
+Computing new shield
+LOG: Starting with explicit model creation...
+Elapsed time is 1.1819689273834229 seconds.
+LOG: Starting with model checking...
+Elapsed time is 0.18578004837036133 seconds.
+LOG: Starting to translate shield...
+Elapsed time is 3.4473276138305664 seconds.
+Directory created successfully: /opt/notebooks/shielding_files_20241118T162024_vhzp7e46
+/opt/Minigrid2PRISM/build/main -i /opt/notebooks/shielding_files_20241118T162024_vhzp7e46/grid.txt -o /opt/notebooks/shielding_files_20241118T162024_vhzp7e46/grid.prism
+Computing new shield
+LOG: Starting with explicit model creation...
+Elapsed time is 1.1928749084472656 seconds.
+LOG: Starting with model checking...
+Elapsed time is 0.16068816184997559 seconds.
+LOG: Starting to translate shield...
+Elapsed time is 3.9195330142974854 seconds.
+Image saved as shield_overlay_image.png
+The shield for shield_value = 0.0
+Image saved as shield_overlay_image.png
+The shield for shield_value = 0.9
+Image saved as shield_overlay_image.png
+The shield for shield_value = 0.99
+Image saved as shield_overlay_image.png
+The shield for shield_value = 0.999
+Image saved as shield_overlay_image.png
+The shield for shield_value = 1.0
+Training with shield:
+Image saved as shield_overlay_image.png
+Using cpu device
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+-----------------------------------
+| info/                |          |
+|    no_shield_action  | 0        |
+|    sum_collision     | 2        |
+|    sum_opened_door   | 0        |
+|    sum_picked_up     | 0        |
+|    sum_ran_into_lava | 39       |
+|    sum_reached_goal  | 0        |
+| rollout/             |          |
+|    ep_len_mean       | 30.8     |
+|    ep_rew_mean       | -1.24    |
+| time/                |          |
+|    fps               | 223      |
+|    iterations        | 1        |
+|    time_elapsed      | 9        |
+|    total_timesteps   | 2048     |
+-----------------------------------
+------------------------------------------
+| info/                   |              |
+|    no_shield_action     | 0            |
+|    sum_collision        | 6            |
+|    sum_opened_door      | 0            |
+|    sum_picked_up        | 0            |
+|    sum_ran_into_lava    | 63           |
+|    sum_reached_goal     | 0            |
+| rollout/                |              |
+|    ep_len_mean          | 33.7         |
+|    ep_rew_mean          | -1.2         |
+| time/                   |              |
+|    fps                  | 150          |
+|    iterations           | 2            |
+|    time_elapsed         | 27           |
+|    total_timesteps      | 4096         |
+| train/                  |              |
+|    approx_kl            | 0.0090281805 |
+|    clip_fraction        | 0.102        |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -1.02        |
+|    explained_variance   | -0.008969903 |
+|    learning_rate        | 0.0003       |
+|    loss                 | 0.0185       |
+|    n_updates            | 10           |
+|    policy_gradient_loss | -0.0151      |
+|    value_loss           | 0.0722       |
+------------------------------------------
+-----------------------------------------
+| info/                   |             |
+|    no_shield_action     | 0           |
+|    sum_collision        | 8           |
+|    sum_opened_door      | 0           |
+|    sum_picked_up        | 0           |
+|    sum_ran_into_lava    | 73          |
+|    sum_reached_goal     | 0           |
+| rollout/                |             |
+|    ep_len_mean          | 37.7        |
+|    ep_rew_mean          | -1.13       |
+| time/                   |             |
+|    fps                  | 144         |
+|    iterations           | 3           |
+|    time_elapsed         | 42          |
+|    total_timesteps      | 6144        |
+| train/                  |             |
+|    approx_kl            | 0.023962684 |
+|    clip_fraction        | 0.192       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1          |
+|    explained_variance   | 0.18322486  |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.0393     |
+|    n_updates            | 20          |
+|    policy_gradient_loss | -0.0294     |
+|    value_loss           | 0.022       |
+-----------------------------------------
+-----------------------------------------
+| info/                   |             |
+|    no_shield_action     | 0           |
+|    sum_collision        | 8           |
+|    sum_opened_door      | 0           |
+|    sum_picked_up        | 0           |
+|    sum_ran_into_lava    | 74          |
+|    sum_reached_goal     | 0           |
+| rollout/                |             |
+|    ep_len_mean          | 44.6        |
+|    ep_rew_mean          | -1.07       |
+| time/                   |             |
+|    fps                  | 141         |
+|    iterations           | 4           |
+|    time_elapsed         | 58          |
+|    total_timesteps      | 8192        |
+| train/                  |             |
+|    approx_kl            | 0.024865013 |
+|    clip_fraction        | 0.277       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.947      |
+|    explained_variance   | -0.1290698  |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.089      |
+|    n_updates            | 30          |
+|    policy_gradient_loss | -0.0447     |
+|    value_loss           | 0.00716     |
+-----------------------------------------
+-----------------------------------------
+| info/                   |             |
+|    no_shield_action     | 0           |
+|    sum_collision        | 9           |
+|    sum_opened_door      | 0           |
+|    sum_picked_up        | 0           |
+|    sum_ran_into_lava    | 74          |
+|    sum_reached_goal     | 0           |
+| rollout/                |             |
+|    ep_len_mean          | 48.8        |
+|    ep_rew_mean          | -1.03       |
+| time/                   |             |
+|    fps                  | 140         |
+|    iterations           | 5           |
+|    time_elapsed         | 72          |
+|    total_timesteps      | 10240       |
+| train/                  |             |
+|    approx_kl            | 0.029232418 |
+|    clip_fraction        | 0.317       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.902      |
+|    explained_variance   | -0.34603167 |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.0946     |
+|    n_updates            | 40          |
+|    policy_gradient_loss | -0.0517     |
+|    value_loss           | 0.00377     |
+-----------------------------------------
+-----------------------------------------
+| info/                   |             |
+|    no_shield_action     | 0           |
+|    sum_collision        | 10          |
+|    sum_opened_door      | 0           |
+|    sum_picked_up        | 0           |
+|    sum_ran_into_lava    | 75          |
+|    sum_reached_goal     | 1           |
+| rollout/                |             |
+|    ep_len_mean          | 48.9        |
+|    ep_rew_mean          | -1.01       |
+| time/                   |             |
+|    fps                  | 140         |
+|    iterations           | 6           |
+|    time_elapsed         | 87          |
+|    total_timesteps      | 12288       |
+| train/                  |             |
+|    approx_kl            | 0.038745202 |
+|    clip_fraction        | 0.369       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.881      |
+|    explained_variance   | -1.3727455  |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.0986     |
+|    n_updates            | 50          |
+|    policy_gradient_loss | -0.0624     |
+|    value_loss           | 0.00284     |
+-----------------------------------------
+-----------------------------------------
+| info/                   |             |
+|    no_shield_action     | 0           |
+|    sum_collision        | 10          |
+|    sum_opened_door      | 0           |
+|    sum_picked_up        | 0           |
+|    sum_ran_into_lava    | 76          |
+|    sum_reached_goal     | 2           |
+| rollout/                |             |
+|    ep_len_mean          | 49.3        |
+|    ep_rew_mean          | -0.997      |
+| time/                   |             |
+|    fps                  | 139         |
+|    iterations           | 7           |
+|    time_elapsed         | 102         |
+|    total_timesteps      | 14336       |
+| train/                  |             |
+|    approx_kl            | 0.037249528 |
+|    clip_fraction        | 0.369       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.835      |
+|    explained_variance   | -0.03867328 |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.0746     |
+|    n_updates            | 60          |
+|    policy_gradient_loss | -0.053      |
+|    value_loss           | 0.00927     |
+-----------------------------------------
+----------------------------------------
+| info/                   |            |
+|    no_shield_action     | 0          |
+|    sum_collision        | 11         |
+|    sum_opened_door      | 0          |
+|    sum_picked_up        | 0          |
+|    sum_ran_into_lava    | 77         |
+|    sum_reached_goal     | 2          |
+| rollout/                |            |
+|    ep_len_mean          | 48.6       |
+|    ep_rew_mean          | -1         |
+| time/                   |            |
+|    fps                  | 139        |
+|    iterations           | 8          |
+|    time_elapsed         | 117        |
+|    total_timesteps      | 16384      |
+| train/                  |            |
+|    approx_kl            | 0.04693725 |
+|    clip_fraction        | 0.365      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -0.821     |
+|    explained_variance   | 0.41586322 |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.0559    |
+|    n_updates            | 70         |
+|    policy_gradient_loss | -0.0507    |
+|    value_loss           | 0.00474    |
+----------------------------------------
+-----------------------------------------
+| info/                   |             |
+|    no_shield_action     | 0           |
+|    sum_collision        | 14          |
+|    sum_opened_door      | 0           |
+|    sum_picked_up        | 0           |
+|    sum_ran_into_lava    | 79          |
+|    sum_reached_goal     | 2           |
+| rollout/                |             |
+|    ep_len_mean          | 48.2        |
+|    ep_rew_mean          | -1.03       |
+| time/                   |             |
+|    fps                  | 139         |
+|    iterations           | 9           |
+|    time_elapsed         | 131         |
+|    total_timesteps      | 18432       |
+| train/                  |             |
+|    approx_kl            | 0.053720795 |
+|    clip_fraction        | 0.404       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.818      |
+|    explained_variance   | 0.36494005  |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.102      |
+|    n_updates            | 80          |
+|    policy_gradient_loss | -0.0654     |
+|    value_loss           | 0.00282     |
+-----------------------------------------
+-----------------------------------------
+| info/                   |             |
+|    no_shield_action     | 0           |
+|    sum_collision        | 20          |
+|    sum_opened_door      | 0           |
+|    sum_picked_up        | 0           |
+|    sum_ran_into_lava    | 83          |
+|    sum_reached_goal     | 2           |
+| rollout/                |             |
+|    ep_len_mean          | 45.9        |
+|    ep_rew_mean          | -1.08       |
+| time/                   |             |
+|    fps                  | 139         |
+|    iterations           | 10          |
+|    time_elapsed         | 146         |
+|    total_timesteps      | 20480       |
+| train/                  |             |
+|    approx_kl            | 0.045131184 |
+|    clip_fraction        | 0.379       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.789      |
+|    explained_variance   | 0.48069602  |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.0781     |
+|    n_updates            | 90          |
+|    policy_gradient_loss | -0.0573     |
+|    value_loss           | 0.0114      |
+-----------------------------------------
+----------------------------------------
+| info/                   |            |
+|    no_shield_action     | 0          |
+|    sum_collision        | 25         |
+|    sum_opened_door      | 0          |
+|    sum_picked_up        | 0          |
+|    sum_ran_into_lava    | 86         |
+|    sum_reached_goal     | 4          |
+| rollout/                |            |
+|    ep_len_mean          | 44.2       |
+|    ep_rew_mean          | -1.07      |
+| time/                   |            |
+|    fps                  | 138        |
+|    iterations           | 11         |
+|    time_elapsed         | 163        |
+|    total_timesteps      | 22528      |
+| train/                  |            |
+|    approx_kl            | 0.06339866 |
+|    clip_fraction        | 0.456      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -0.78      |
+|    explained_variance   | 0.3809532  |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.0852    |
+|    n_updates            | 100        |
+|    policy_gradient_loss | -0.0705    |
+|    value_loss           | 0.0128     |
+----------------------------------------
+-----------------------------------------
+| info/                   |             |
+|    no_shield_action     | 0           |
+|    sum_collision        | 33          |
+|    sum_opened_door      | 0           |
+|    sum_picked_up        | 0           |
+|    sum_ran_into_lava    | 92          |
+|    sum_reached_goal     | 8           |
+| rollout/                |             |
+|    ep_len_mean          | 43.9        |
+|    ep_rew_mean          | -1.06       |
+| time/                   |             |
+|    fps                  | 137         |
+|    iterations           | 12          |
+|    time_elapsed         | 178         |
+|    total_timesteps      | 24576       |
+| train/                  |             |
+|    approx_kl            | 0.064229384 |
+|    clip_fraction        | 0.44        |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.757      |
+|    explained_variance   | 0.2222392   |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.0862     |
+|    n_updates            | 110         |
+|    policy_gradient_loss | -0.0636     |
+|    value_loss           | 0.0226      |
+-----------------------------------------
+-----------------------------------------
+| info/                   |             |
+|    no_shield_action     | 0           |
+|    sum_collision        | 42          |
+|    sum_opened_door      | 0           |
+|    sum_picked_up        | 0           |
+|    sum_ran_into_lava    | 107         |
+|    sum_reached_goal     | 17          |
+| rollout/                |             |
+|    ep_len_mean          | 40          |
+|    ep_rew_mean          | -1.05       |
+| time/                   |             |
+|    fps                  | 138         |
+|    iterations           | 13          |
+|    time_elapsed         | 192         |
+|    total_timesteps      | 26624       |
+| train/                  |             |
+|    approx_kl            | 0.085543916 |
+|    clip_fraction        | 0.451       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.703      |
+|    explained_variance   | 0.54831153  |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.0902     |
+|    n_updates            | 120         |
+|    policy_gradient_loss | -0.0742     |
+|    value_loss           | 0.0458      |
+-----------------------------------------
+-----------------------------------------
+| info/                   |             |
+|    no_shield_action     | 0           |
+|    sum_collision        | 57          |
+|    sum_opened_door      | 0           |
+|    sum_picked_up        | 0           |
+|    sum_ran_into_lava    | 122         |
+|    sum_reached_goal     | 34          |
+| rollout/                |             |
+|    ep_len_mean          | 33.3        |
+|    ep_rew_mean          | -0.915      |
+| time/                   |             |
+|    fps                  | 138         |
+|    iterations           | 14          |
+|    time_elapsed         | 207         |
+|    total_timesteps      | 28672       |
+| train/                  |             |
+|    approx_kl            | 0.078528196 |
+|    clip_fraction        | 0.431       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.655      |
+|    explained_variance   | 0.49973893  |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.0869     |
+|    n_updates            | 130         |
+|    policy_gradient_loss | -0.07       |
+|    value_loss           | 0.0897      |
+-----------------------------------------
+-----------------------------------------
+| info/                   |             |
+|    no_shield_action     | 0           |
+|    sum_collision        | 67          |
+|    sum_opened_door      | 0           |
+|    sum_picked_up        | 0           |
+|    sum_ran_into_lava    | 131         |
+|    sum_reached_goal     | 70          |
+| rollout/                |             |
+|    ep_len_mean          | 31.6        |
+|    ep_rew_mean          | -0.501      |
+| time/                   |             |
+|    fps                  | 136         |
+|    iterations           | 15          |
+|    time_elapsed         | 224         |
+|    total_timesteps      | 30720       |
+| train/                  |             |
+|    approx_kl            | 0.102802455 |
+|    clip_fraction        | 0.414       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.6        |
+|    explained_variance   | 0.4235791   |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.0339     |
+|    n_updates            | 140         |
+|    policy_gradient_loss | -0.0673     |
+|    value_loss           | 0.102       |
+-----------------------------------------
+----------------------------------------
+| info/                   |            |
+|    no_shield_action     | 0          |
+|    sum_collision        | 77         |
+|    sum_opened_door      | 0          |
+|    sum_picked_up        | 0          |
+|    sum_ran_into_lava    | 141        |
+|    sum_reached_goal     | 121        |
+| rollout/                |            |
+|    ep_len_mean          | 27.9       |
+|    ep_rew_mean          | -0.168     |
+| time/                   |            |
+|    fps                  | 136        |
+|    iterations           | 16         |
+|    time_elapsed         | 239        |
+|    total_timesteps      | 32768      |
+| train/                  |            |
+|    approx_kl            | 0.11082133 |
+|    clip_fraction        | 0.394      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -0.54      |
+|    explained_variance   | 0.3835835  |
+|    learning_rate        | 0.0003     |
+|    loss                 | 0.00237    |
+|    n_updates            | 150        |
+|    policy_gradient_loss | -0.067     |
+|    value_loss           | 0.13       |
+----------------------------------------
+----------------------------------------
+| info/                   |            |
+|    no_shield_action     | 0          |
+|    sum_collision        | 80         |
+|    sum_opened_door      | 0          |
+|    sum_picked_up        | 0          |
+|    sum_ran_into_lava    | 145        |
+|    sum_reached_goal     | 176        |
+| rollout/                |            |
+|    ep_len_mean          | 29.7       |
+|    ep_rew_mean          | 0.0166     |
+| time/                   |            |
+|    fps                  | 136        |
+|    iterations           | 17         |
+|    time_elapsed         | 255        |
+|    total_timesteps      | 34816      |
+| train/                  |            |
+|    approx_kl            | 0.1178616  |
+|    clip_fraction        | 0.375      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -0.511     |
+|    explained_variance   | 0.42863637 |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.067     |
+|    n_updates            | 160        |
+|    policy_gradient_loss | -0.0617    |
+|    value_loss           | 0.0978     |
+----------------------------------------
+----------------------------------------
+| info/                   |            |
+|    no_shield_action     | 0          |
+|    sum_collision        | 89         |
+|    sum_opened_door      | 0          |
+|    sum_picked_up        | 0          |
+|    sum_ran_into_lava    | 148        |
+|    sum_reached_goal     | 220        |
+| rollout/                |            |
+|    ep_len_mean          | 32.6       |
+|    ep_rew_mean          | -0.0416    |
+| time/                   |            |
+|    fps                  | 135        |
+|    iterations           | 18         |
+|    time_elapsed         | 272        |
+|    total_timesteps      | 36864      |
+| train/                  |            |
+|    approx_kl            | 0.09787625 |
+|    clip_fraction        | 0.367      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -0.502     |
+|    explained_variance   | 0.47970653 |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.0299    |
+|    n_updates            | 170        |
+|    policy_gradient_loss | -0.0562    |
+|    value_loss           | 0.0521     |
+----------------------------------------
+----------------------------------------
+| info/                   |            |
+|    no_shield_action     | 0          |
+|    sum_collision        | 93         |
+|    sum_opened_door      | 0          |
+|    sum_picked_up        | 0          |
+|    sum_ran_into_lava    | 149        |
+|    sum_reached_goal     | 275        |
+| rollout/                |            |
+|    ep_len_mean          | 31.3       |
+|    ep_rew_mean          | 0.0544     |
+| time/                   |            |
+|    fps                  | 135        |
+|    iterations           | 19         |
+|    time_elapsed         | 288        |
+|    total_timesteps      | 38912      |
+| train/                  |            |
+|    approx_kl            | 0.10326214 |
+|    clip_fraction        | 0.384      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -0.505     |
+|    explained_variance   | 0.0361709  |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.0262    |
+|    n_updates            | 180        |
+|    policy_gradient_loss | -0.0601    |
+|    value_loss           | 0.0968     |
+----------------------------------------
+----------------------------------------
+| info/                   |            |
+|    no_shield_action     | 0          |
+|    sum_collision        | 94         |
+|    sum_opened_door      | 0          |
+|    sum_picked_up        | 0          |
+|    sum_ran_into_lava    | 153        |
+|    sum_reached_goal     | 340        |
+| rollout/                |            |
+|    ep_len_mean          | 28.9       |
+|    ep_rew_mean          | 0.212      |
+| time/                   |            |
+|    fps                  | 134        |
+|    iterations           | 20         |
+|    time_elapsed         | 303        |
+|    total_timesteps      | 40960      |
+| train/                  |            |
+|    approx_kl            | 0.10578618 |
+|    clip_fraction        | 0.349      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -0.437     |
+|    explained_variance   | 0.3593712  |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.0698    |
+|    n_updates            | 190        |
+|    policy_gradient_loss | -0.0552    |
+|    value_loss           | 0.0615     |
+----------------------------------------
+-----------------------------------------
+| info/                   |             |
+|    no_shield_action     | 0           |
+|    sum_collision        | 101         |
+|    sum_opened_door      | 0           |
+|    sum_picked_up        | 0           |
+|    sum_ran_into_lava    | 153         |
+|    sum_reached_goal     | 413         |
+| rollout/                |             |
+|    ep_len_mean          | 25.5        |
+|    ep_rew_mean          | 0.281       |
+| time/                   |             |
+|    fps                  | 135         |
+|    iterations           | 21          |
+|    time_elapsed         | 318         |
+|    total_timesteps      | 43008       |
+| train/                  |             |
+|    approx_kl            | 0.087318175 |
+|    clip_fraction        | 0.325       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.434      |
+|    explained_variance   | 0.45303732  |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.0441     |
+|    n_updates            | 200         |
+|    policy_gradient_loss | -0.0483     |
+|    value_loss           | 0.0434      |
+-----------------------------------------
+----------------------------------------
+| info/                   |            |
+|    no_shield_action     | 0          |
+|    sum_collision        | 103        |
+|    sum_opened_door      | 0          |
+|    sum_picked_up        | 0          |
+|    sum_ran_into_lava    | 154        |
+|    sum_reached_goal     | 498        |
+| rollout/                |            |
+|    ep_len_mean          | 22.9       |
+|    ep_rew_mean          | 0.432      |
+| time/                   |            |
+|    fps                  | 135        |
+|    iterations           | 22         |
+|    time_elapsed         | 332        |
+|    total_timesteps      | 45056      |
+| train/                  |            |
+|    approx_kl            | 0.11403859 |
+|    clip_fraction        | 0.319      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -0.407     |
+|    explained_variance   | 0.41117418 |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.0396    |
+|    n_updates            | 210        |
+|    policy_gradient_loss | -0.0489    |
+|    value_loss           | 0.0587     |
+----------------------------------------
+----------------------------------------
+| info/                   |            |
+|    no_shield_action     | 0          |
+|    sum_collision        | 103        |
+|    sum_opened_door      | 0          |
+|    sum_picked_up        | 0          |
+|    sum_ran_into_lava    | 155        |
+|    sum_reached_goal     | 586        |
+| rollout/                |            |
+|    ep_len_mean          | 23         |
+|    ep_rew_mean          | 0.52       |
+| time/                   |            |
+|    fps                  | 135        |
+|    iterations           | 23         |
+|    time_elapsed         | 346        |
+|    total_timesteps      | 47104      |
+| train/                  |            |
+|    approx_kl            | 0.09274329 |
+|    clip_fraction        | 0.298      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -0.366     |
+|    explained_variance   | 0.5233901  |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.0249    |
+|    n_updates            | 220        |
+|    policy_gradient_loss | -0.0447    |
+|    value_loss           | 0.0213     |
+----------------------------------------
+----------------------------------------
+| info/                   |            |
+|    no_shield_action     | 0          |
+|    sum_collision        | 105        |
+|    sum_opened_door      | 0          |
+|    sum_picked_up        | 0          |
+|    sum_ran_into_lava    | 157        |
+|    sum_reached_goal     | 662        |
+| rollout/                |            |
+|    ep_len_mean          | 24.1       |
+|    ep_rew_mean          | 0.388      |
+| time/                   |            |
+|    fps                  | 136        |
+|    iterations           | 24         |
+|    time_elapsed         | 360        |
+|    total_timesteps      | 49152      |
+| train/                  |            |
+|    approx_kl            | 0.11518052 |
+|    clip_fraction        | 0.338      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -0.382     |
+|    explained_variance   | 0.48195428 |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.0606    |
+|    n_updates            | 230        |
+|    policy_gradient_loss | -0.0489    |
+|    value_loss           | 0.0109     |
+----------------------------------------
+----------------------------------------
+| info/                   |            |
+|    no_shield_action     | 0          |
+|    sum_collision        | 106        |
+|    sum_opened_door      | 0          |
+|    sum_picked_up        | 0          |
+|    sum_ran_into_lava    | 157        |
+|    sum_reached_goal     | 745        |
+| rollout/                |            |
+|    ep_len_mean          | 24.6       |
+|    ep_rew_mean          | 0.457      |
+| time/                   |            |
+|    fps                  | 136        |
+|    iterations           | 25         |
+|    time_elapsed         | 375        |
+|    total_timesteps      | 51200      |
+| train/                  |            |
+|    approx_kl            | 0.10233307 |
+|    clip_fraction        | 0.363      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -0.411     |
+|    explained_variance   | 0.48119473 |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.0792    |
+|    n_updates            | 240        |
+|    policy_gradient_loss | -0.0492    |
+|    value_loss           | 0.0128     |
+----------------------------------------
+----------------------------------------
+| info/                   |            |
+|    no_shield_action     | 0          |
+|    sum_collision        | 108        |
+|    sum_opened_door      | 0          |
+|    sum_picked_up        | 0          |
+|    sum_ran_into_lava    | 158        |
+|    sum_reached_goal     | 829        |
+| rollout/                |            |
+|    ep_len_mean          | 23.2       |
+|    ep_rew_mean          | 0.465      |
+| time/                   |            |
+|    fps                  | 136        |
+|    iterations           | 26         |
+|    time_elapsed         | 390        |
+|    total_timesteps      | 53248      |
+| train/                  |            |
+|    approx_kl            | 0.09591645 |
+|    clip_fraction        | 0.33       |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -0.364     |
+|    explained_variance   | 0.5520615  |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.0438    |
+|    n_updates            | 250        |
+|    policy_gradient_loss | -0.0473    |
+|    value_loss           | 0.0116     |
+----------------------------------------
+----------------------------------------
+| info/                   |            |
+|    no_shield_action     | 0          |
+|    sum_collision        | 108        |
+|    sum_opened_door      | 0          |
+|    sum_picked_up        | 0          |
+|    sum_ran_into_lava    | 159        |
+|    sum_reached_goal     | 928        |
+| rollout/                |            |
+|    ep_len_mean          | 20.1       |
+|    ep_rew_mean          | 0.559      |
+| time/                   |            |
+|    fps                  | 136        |
+|    iterations           | 27         |
+|    time_elapsed         | 405        |
+|    total_timesteps      | 55296      |
+| train/                  |            |
+|    approx_kl            | 0.11036414 |
+|    clip_fraction        | 0.289      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -0.321     |
+|    explained_variance   | 0.4798718  |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.0279    |
+|    n_updates            | 260        |
+|    policy_gradient_loss | -0.0424    |
+|    value_loss           | 0.028      |
+----------------------------------------
+----------------------------------------
+| info/                   |            |
+|    no_shield_action     | 0          |
+|    sum_collision        | 109        |
+|    sum_opened_door      | 0          |
+|    sum_picked_up        | 0          |
+|    sum_ran_into_lava    | 159        |
+|    sum_reached_goal     | 1024       |
+| rollout/                |            |
+|    ep_len_mean          | 21         |
+|    ep_rew_mean          | 0.56       |
+| time/                   |            |
+|    fps                  | 136        |
+|    iterations           | 28         |
+|    time_elapsed         | 419        |
+|    total_timesteps      | 57344      |
+| train/                  |            |
+|    approx_kl            | 0.15968204 |
+|    clip_fraction        | 0.271      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -0.27      |
+|    explained_variance   | 0.5429536  |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.0626    |
+|    n_updates            | 270        |
+|    policy_gradient_loss | -0.0461    |
+|    value_loss           | 0.0122     |
+----------------------------------------
+----------------------------------------
+| info/                   |            |
+|    no_shield_action     | 0          |
+|    sum_collision        | 109        |
+|    sum_opened_door      | 0          |
+|    sum_picked_up        | 0          |
+|    sum_ran_into_lava    | 159        |
+|    sum_reached_goal     | 1124       |
+| rollout/                |            |
+|    ep_len_mean          | 20.6       |
+|    ep_rew_mean          | 0.588      |
+| time/                   |            |
+|    fps                  | 137        |
+|    iterations           | 29         |
+|    time_elapsed         | 433        |
+|    total_timesteps      | 59392      |
+| train/                  |            |
+|    approx_kl            | 0.11427465 |
+|    clip_fraction        | 0.284      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -0.28      |
+|    explained_variance   | 0.52027845 |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.0624    |
+|    n_updates            | 280        |
+|    policy_gradient_loss | -0.0423    |
+|    value_loss           | 0.0193     |
+----------------------------------------
+----------------------------------------
+| info/                   |            |
+|    no_shield_action     | 0          |
+|    sum_collision        | 112        |
+|    sum_opened_door      | 0          |
+|    sum_picked_up        | 0          |
+|    sum_ran_into_lava    | 159        |
+|    sum_reached_goal     | 1225       |
+| rollout/                |            |
+|    ep_len_mean          | 19.7       |
+|    ep_rew_mean          | 0.546      |
+| time/                   |            |
+|    fps                  | 136        |
+|    iterations           | 30         |
+|    time_elapsed         | 449        |
+|    total_timesteps      | 61440      |
+| train/                  |            |
+|    approx_kl            | 0.09704921 |
+|    clip_fraction        | 0.267      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -0.262     |
+|    explained_variance   | 0.6831579  |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.0372    |
+|    n_updates            | 290        |
+|    policy_gradient_loss | -0.0399    |
+|    value_loss           | 0.00481    |
+----------------------------------------
+-----------------------------------------
+| info/                   |             |
+|    no_shield_action     | 0           |
+|    sum_collision        | 112         |
+|    sum_opened_door      | 0           |
+|    sum_picked_up        | 0           |
+|    sum_ran_into_lava    | 164         |
+|    sum_reached_goal     | 1331        |
+| rollout/                |             |
+|    ep_len_mean          | 18.1        |
+|    ep_rew_mean          | 0.537       |
+| time/                   |             |
+|    fps                  | 136         |
+|    iterations           | 31          |
+|    time_elapsed         | 465         |
+|    total_timesteps      | 63488       |
+| train/                  |             |
+|    approx_kl            | 0.058961913 |
+|    clip_fraction        | 0.198       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.235      |
+|    explained_variance   | 0.3342532   |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.0463     |
+|    n_updates            | 300         |
+|    policy_gradient_loss | -0.0221     |
+|    value_loss           | 0.0319      |
+-----------------------------------------
+----------------------------------------
+| info/                   |            |
+|    no_shield_action     | 0          |
+|    sum_collision        | 112        |
+|    sum_opened_door      | 0          |
+|    sum_picked_up        | 0          |
+|    sum_ran_into_lava    | 165        |
+|    sum_reached_goal     | 1447       |
+| rollout/                |            |
+|    ep_len_mean          | 17.6       |
+|    ep_rew_mean          | 0.649      |
+| time/                   |            |
+|    fps                  | 136        |
+|    iterations           | 32         |
+|    time_elapsed         | 481        |
+|    total_timesteps      | 65536      |
+| train/                  |            |
+|    approx_kl            | 0.08594651 |
+|    clip_fraction        | 0.197      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -0.229     |
+|    explained_variance   | 0.4475084  |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.0413    |
+|    n_updates            | 310        |
+|    policy_gradient_loss | -0.0298    |
+|    value_loss           | 0.0175     |
+----------------------------------------
+----------------------------------------
+| info/                   |            |
+|    no_shield_action     | 0          |
+|    sum_collision        | 114        |
+|    sum_opened_door      | 0          |
+|    sum_picked_up        | 0          |
+|    sum_ran_into_lava    | 166        |
+|    sum_reached_goal     | 1536       |
+| rollout/                |            |
+|    ep_len_mean          | 21.4       |
+|    ep_rew_mean          | 0.491      |
+| time/                   |            |
+|    fps                  | 136        |
+|    iterations           | 33         |
+|    time_elapsed         | 496        |
+|    total_timesteps      | 67584      |
+| train/                  |            |
+|    approx_kl            | 0.08027138 |
+|    clip_fraction        | 0.232      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -0.254     |
+|    explained_variance   | 0.5521858  |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.0441    |
+|    n_updates            | 320        |
+|    policy_gradient_loss | -0.0364    |
+|    value_loss           | 0.00606    |
+----------------------------------------
+----------------------------------------
+| info/                   |            |
+|    no_shield_action     | 0          |
+|    sum_collision        | 114        |
+|    sum_opened_door      | 0          |
+|    sum_picked_up        | 0          |
+|    sum_ran_into_lava    | 166        |
+|    sum_reached_goal     | 1642       |
+| rollout/                |            |
+|    ep_len_mean          | 18.9       |
+|    ep_rew_mean          | 0.622      |
+| time/                   |            |
+|    fps                  | 136        |
+|    iterations           | 34         |
+|    time_elapsed         | 510        |
+|    total_timesteps      | 69632      |
+| train/                  |            |
+|    approx_kl            | 0.1075902  |
+|    clip_fraction        | 0.31       |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -0.346     |
+|    explained_variance   | 0.34690613 |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.0802    |
+|    n_updates            | 330        |
+|    policy_gradient_loss | -0.0526    |
+|    value_loss           | 0.0213     |
+----------------------------------------
+-----------------------------------------
+| info/                   |             |
+|    no_shield_action     | 0           |
+|    sum_collision        | 114         |
+|    sum_opened_door      | 0           |
+|    sum_picked_up        | 0           |
+|    sum_ran_into_lava    | 166         |
+|    sum_reached_goal     | 1760        |
+| rollout/                |             |
+|    ep_len_mean          | 17.4        |
+|    ep_rew_mean          | 0.651       |
+| time/                   |             |
+|    fps                  | 136         |
+|    iterations           | 35          |
+|    time_elapsed         | 524         |
+|    total_timesteps      | 71680       |
+| train/                  |             |
+|    approx_kl            | 0.066846184 |
+|    clip_fraction        | 0.219       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.218      |
+|    explained_variance   | 0.7004228   |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.0867     |
+|    n_updates            | 340         |
+|    policy_gradient_loss | -0.0455     |
+|    value_loss           | 0.00881     |
+-----------------------------------------
+----------------------------------------
+| info/                   |            |
+|    no_shield_action     | 0          |
+|    sum_collision        | 114        |
+|    sum_opened_door      | 0          |
+|    sum_picked_up        | 0          |
+|    sum_ran_into_lava    | 166        |
+|    sum_reached_goal     | 1883       |
+| rollout/                |            |
+|    ep_len_mean          | 17.2       |
+|    ep_rew_mean          | 0.656      |
+| time/                   |            |
+|    fps                  | 136        |
+|    iterations           | 36         |
+|    time_elapsed         | 539        |
+|    total_timesteps      | 73728      |
+| train/                  |            |
+|    approx_kl            | 0.05911933 |
+|    clip_fraction        | 0.167      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -0.16      |
+|    explained_variance   | 0.7646956  |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.0589    |
+|    n_updates            | 350        |
+|    policy_gradient_loss | -0.0388    |
+|    value_loss           | 0.0033     |
+----------------------------------------
+----------------------------------------
+| info/                   |            |
+|    no_shield_action     | 0          |
+|    sum_collision        | 115        |
+|    sum_opened_door      | 0          |
+|    sum_picked_up        | 0          |
+|    sum_ran_into_lava    | 166        |
+|    sum_reached_goal     | 1996       |
+| rollout/                |            |
+|    ep_len_mean          | 18         |
+|    ep_rew_mean          | 0.62       |
+| time/                   |            |
+|    fps                  | 136        |
+|    iterations           | 37         |
+|    time_elapsed         | 553        |
+|    total_timesteps      | 75776      |
+| train/                  |            |
+|    approx_kl            | 0.10021316 |
+|    clip_fraction        | 0.197      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -0.16      |
+|    explained_variance   | 0.74889815 |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.052     |
+|    n_updates            | 360        |
+|    policy_gradient_loss | -0.0329    |
+|    value_loss           | 0.00266    |
+----------------------------------------
+-----------------------------------------
+| info/                   |             |
+|    no_shield_action     | 0           |
+|    sum_collision        | 115         |
+|    sum_opened_door      | 0           |
+|    sum_picked_up        | 0           |
+|    sum_ran_into_lava    | 167         |
+|    sum_reached_goal     | 2117        |
+| rollout/                |             |
+|    ep_len_mean          | 17.1        |
+|    ep_rew_mean          | 0.657       |
+| time/                   |             |
+|    fps                  | 136         |
+|    iterations           | 38          |
+|    time_elapsed         | 568         |
+|    total_timesteps      | 77824       |
+| train/                  |             |
+|    approx_kl            | 0.092098296 |
+|    clip_fraction        | 0.197       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.182      |
+|    explained_variance   | 0.7614261   |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.0627     |
+|    n_updates            | 370         |
+|    policy_gradient_loss | -0.0272     |
+|    value_loss           | 0.00379     |
+-----------------------------------------
+----------------------------------------
+| info/                   |            |
+|    no_shield_action     | 0          |
+|    sum_collision        | 115        |
+|    sum_opened_door      | 0          |
+|    sum_picked_up        | 0          |
+|    sum_ran_into_lava    | 174        |
+|    sum_reached_goal     | 2242       |
+| rollout/                |            |
+|    ep_len_mean          | 15.4       |
+|    ep_rew_mean          | 0.612      |
+| time/                   |            |
+|    fps                  | 136        |
+|    iterations           | 39         |
+|    time_elapsed         | 584        |
+|    total_timesteps      | 79872      |
+| train/                  |            |
+|    approx_kl            | 0.10728297 |
+|    clip_fraction        | 0.2        |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -0.174     |
+|    explained_variance   | 0.7865402  |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.0487    |
+|    n_updates            | 380        |
+|    policy_gradient_loss | -0.0401    |
+|    value_loss           | 0.00254    |
+----------------------------------------
+----------------------------------------
+| info/                   |            |
+|    no_shield_action     | 0          |
+|    sum_collision        | 115        |
+|    sum_opened_door      | 0          |
+|    sum_picked_up        | 0          |
+|    sum_ran_into_lava    | 175        |
+|    sum_reached_goal     | 2383       |
+| rollout/                |            |
+|    ep_len_mean          | 14.2       |
+|    ep_rew_mean          | 0.697      |
+| time/                   |            |
+|    fps                  | 136        |
+|    iterations           | 40         |
+|    time_elapsed         | 598        |
+|    total_timesteps      | 81920      |
+| train/                  |            |
+|    approx_kl            | 0.11270808 |
+|    clip_fraction        | 0.147      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -0.118     |
+|    explained_variance   | 0.39586467 |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.0456    |
+|    n_updates            | 390        |
+|    policy_gradient_loss | -0.0338    |
+|    value_loss           | 0.0343     |
+----------------------------------------
+----------------------------------------
+| info/                   |            |
+|    no_shield_action     | 0          |
+|    sum_collision        | 117        |
+|    sum_opened_door      | 0          |
+|    sum_picked_up        | 0          |
+|    sum_ran_into_lava    | 175        |
+|    sum_reached_goal     | 2521       |
+| rollout/                |            |
+|    ep_len_mean          | 14.7       |
+|    ep_rew_mean          | 0.667      |
+| time/                   |            |
+|    fps                  | 137        |
+|    iterations           | 41         |
+|    time_elapsed         | 612        |
+|    total_timesteps      | 83968      |
+| train/                  |            |
+|    approx_kl            | 0.05983906 |
+|    clip_fraction        | 0.0753     |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -0.0567    |
+|    explained_variance   | 0.52975917 |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.0225    |
+|    n_updates            | 400        |
+|    policy_gradient_loss | -0.0153    |
+|    value_loss           | 0.00294    |
+----------------------------------------
+----------------------------------------
+| info/                   |            |
+|    no_shield_action     | 0          |
+|    sum_collision        | 117        |
+|    sum_opened_door      | 0          |
+|    sum_picked_up        | 0          |
+|    sum_ran_into_lava    | 185        |
+|    sum_reached_goal     | 2662       |
+| rollout/                |            |
+|    ep_len_mean          | 13.5       |
+|    ep_rew_mean          | 0.59       |
+| time/                   |            |
+|    fps                  | 137        |
+|    iterations           | 42         |
+|    time_elapsed         | 626        |
+|    total_timesteps      | 86016      |
+| train/                  |            |
+|    approx_kl            | 0.10347982 |
+|    clip_fraction        | 0.07       |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -0.0517    |
+|    explained_variance   | 0.5869731  |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.0151    |
+|    n_updates            | 410        |
+|    policy_gradient_loss | -0.0162    |
+|    value_loss           | 0.00376    |
+----------------------------------------
+----------------------------------------
+| info/                   |            |
+|    no_shield_action     | 0          |
+|    sum_collision        | 117        |
+|    sum_opened_door      | 0          |
+|    sum_picked_up        | 0          |
+|    sum_ran_into_lava    | 185        |
+|    sum_reached_goal     | 2804       |
+| rollout/                |            |
+|    ep_len_mean          | 14.4       |
+|    ep_rew_mean          | 0.712      |
+| time/                   |            |
+|    fps                  | 137        |
+|    iterations           | 43         |
+|    time_elapsed         | 641        |
+|    total_timesteps      | 88064      |
+| train/                  |            |
+|    approx_kl            | 0.0658029  |
+|    clip_fraction        | 0.0658     |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -0.0579    |
+|    explained_variance   | 0.38734287 |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.0225    |
+|    n_updates            | 420        |
+|    policy_gradient_loss | -0.02      |
+|    value_loss           | 0.00384    |
+----------------------------------------
+-----------------------------------------
+| info/                   |             |
+|    no_shield_action     | 0           |
+|    sum_collision        | 117         |
+|    sum_opened_door      | 0           |
+|    sum_picked_up        | 0           |
+|    sum_ran_into_lava    | 185         |
+|    sum_reached_goal     | 2946        |
+| rollout/                |             |
+|    ep_len_mean          | 14.1        |
+|    ep_rew_mean          | 0.718       |
+| time/                   |             |
+|    fps                  | 137         |
+|    iterations           | 44          |
+|    time_elapsed         | 657         |
+|    total_timesteps      | 90112       |
+| train/                  |             |
+|    approx_kl            | 0.035140567 |
+|    clip_fraction        | 0.0562      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.0457     |
+|    explained_variance   | 0.23246074  |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.0305     |
+|    n_updates            | 430         |
+|    policy_gradient_loss | -0.00825    |
+|    value_loss           | 0.00204     |
+-----------------------------------------
+-----------------------------------------
+| info/                   |             |
+|    no_shield_action     | 0           |
+|    sum_collision        | 117         |
+|    sum_opened_door      | 0           |
+|    sum_picked_up        | 0           |
+|    sum_ran_into_lava    | 185         |
+|    sum_reached_goal     | 3092        |
+| rollout/                |             |
+|    ep_len_mean          | 13.9        |
+|    ep_rew_mean          | 0.722       |
+| time/                   |             |
+|    fps                  | 137         |
+|    iterations           | 45          |
+|    time_elapsed         | 671         |
+|    total_timesteps      | 92160       |
+| train/                  |             |
+|    approx_kl            | 0.033737797 |
+|    clip_fraction        | 0.067       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.0535     |
+|    explained_variance   | 0.8594863   |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.0302     |
+|    n_updates            | 440         |
+|    policy_gradient_loss | -0.0153     |
+|    value_loss           | 0.00115     |
+-----------------------------------------
+-----------------------------------------
+| info/                   |             |
+|    no_shield_action     | 0           |
+|    sum_collision        | 117         |
+|    sum_opened_door      | 0           |
+|    sum_picked_up        | 0           |
+|    sum_ran_into_lava    | 185         |
+|    sum_reached_goal     | 3234        |
+| rollout/                |             |
+|    ep_len_mean          | 14.1        |
+|    ep_rew_mean          | 0.717       |
+| time/                   |             |
+|    fps                  | 137         |
+|    iterations           | 46          |
+|    time_elapsed         | 685         |
+|    total_timesteps      | 94208       |
+| train/                  |             |
+|    approx_kl            | 0.040039822 |
+|    clip_fraction        | 0.0588      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.0486     |
+|    explained_variance   | 0.9334222   |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.00714    |
+|    n_updates            | 450         |
+|    policy_gradient_loss | -0.0163     |
+|    value_loss           | 0.00056     |
+-----------------------------------------
+----------------------------------------
+| info/                   |            |
+|    no_shield_action     | 0          |
+|    sum_collision        | 117        |
+|    sum_opened_door      | 0          |
+|    sum_picked_up        | 0          |
+|    sum_ran_into_lava    | 185        |
+|    sum_reached_goal     | 3373       |
+| rollout/                |            |
+|    ep_len_mean          | 14.3       |
+|    ep_rew_mean          | 0.714      |
+| time/                   |            |
+|    fps                  | 137        |
+|    iterations           | 47         |
+|    time_elapsed         | 701        |
+|    total_timesteps      | 96256      |
+| train/                  |            |
+|    approx_kl            | 0.0671318  |
+|    clip_fraction        | 0.0728     |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -0.0481    |
+|    explained_variance   | 0.90323055 |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.0369    |
+|    n_updates            | 460        |
+|    policy_gradient_loss | -0.0188    |
+|    value_loss           | 0.000621   |
+----------------------------------------
+-----------------------------------------
+| info/                   |             |
+|    no_shield_action     | 0           |
+|    sum_collision        | 117         |
+|    sum_opened_door      | 0           |
+|    sum_picked_up        | 0           |
+|    sum_ran_into_lava    | 189         |
+|    sum_reached_goal     | 3517        |
+| rollout/                |             |
+|    ep_len_mean          | 13.8        |
+|    ep_rew_mean          | 0.664       |
+| time/                   |             |
+|    fps                  | 136         |
+|    iterations           | 48          |
+|    time_elapsed         | 718         |
+|    total_timesteps      | 98304       |
+| train/                  |             |
+|    approx_kl            | 0.057554357 |
+|    clip_fraction        | 0.0767      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.0516     |
+|    explained_variance   | 0.86149746  |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.00534    |
+|    n_updates            | 470         |
+|    policy_gradient_loss | -0.0214     |
+|    value_loss           | 0.00141     |
+-----------------------------------------
+----------------------------------------
+| info/                   |            |
+|    no_shield_action     | 0          |
+|    sum_collision        | 121        |
+|    sum_opened_door      | 0          |
+|    sum_picked_up        | 0          |
+|    sum_ran_into_lava    | 189        |
+|    sum_reached_goal     | 3624       |
+| rollout/                |            |
+|    ep_len_mean          | 18.4       |
+|    ep_rew_mean          | 0.562      |
+| time/                   |            |
+|    fps                  | 136        |
+|    iterations           | 49         |
+|    time_elapsed         | 734        |
+|    total_timesteps      | 100352     |
+| train/                  |            |
+|    approx_kl            | 0.11336163 |
+|    clip_fraction        | 0.0534     |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -0.0417    |
+|    explained_variance   | 0.55944884 |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.0282    |
+|    n_updates            | 480        |
+|    policy_gradient_loss | -0.0166    |
+|    value_loss           | 0.00406    |
+----------------------------------------
+------------------------------------------
+| info/                   |              |
+|    no_shield_action     | 0            |
+|    sum_collision        | 127          |
+|    sum_opened_door      | 0            |
+|    sum_picked_up        | 0            |
+|    sum_ran_into_lava    | 189          |
+|    sum_reached_goal     | 3748         |
+| rollout/                |              |
+|    ep_len_mean          | 15.8         |
+|    ep_rew_mean          | 0.625        |
+| time/                   |              |
+|    fps                  | 136          |
+|    iterations           | 50           |
+|    time_elapsed         | 750          |
+|    total_timesteps      | 102400       |
+| train/                  |              |
+|    approx_kl            | 0.0926971    |
+|    clip_fraction        | 0.223        |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -0.225       |
+|    explained_variance   | -0.037160516 |
+|    learning_rate        | 0.0003       |
+|    loss                 | -0.025       |
+|    n_updates            | 490          |
+|    policy_gradient_loss | -0.0342      |
+|    value_loss           | 0.0468       |
+------------------------------------------
+----------------------------------------
+| info/                   |            |
+|    no_shield_action     | 0          |
+|    sum_collision        | 127        |
+|    sum_opened_door      | 0          |
+|    sum_picked_up        | 0          |
+|    sum_ran_into_lava    | 189        |
+|    sum_reached_goal     | 3875       |
+| rollout/                |            |
+|    ep_len_mean          | 15.9       |
+|    ep_rew_mean          | 0.683      |
+| time/                   |            |
+|    fps                  | 136        |
+|    iterations           | 51         |
+|    time_elapsed         | 766        |
+|    total_timesteps      | 104448     |
+| train/                  |            |
+|    approx_kl            | 0.05393872 |
+|    clip_fraction        | 0.205      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -0.244     |
+|    explained_variance   | 0.2950455  |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.0455    |
+|    n_updates            | 500        |
+|    policy_gradient_loss | -0.0359    |
+|    value_loss           | 0.038      |
+----------------------------------------
+----------------------------------------
+| info/                   |            |
+|    no_shield_action     | 0          |
+|    sum_collision        | 131        |
+|    sum_opened_door      | 0          |
+|    sum_picked_up        | 0          |
+|    sum_ran_into_lava    | 195        |
+|    sum_reached_goal     | 3978       |
+| rollout/                |            |
+|    ep_len_mean          | 17.7       |
+|    ep_rew_mean          | 0.445      |
+| time/                   |            |
+|    fps                  | 136        |
+|    iterations           | 52         |
+|    time_elapsed         | 782        |
+|    total_timesteps      | 106496     |
+| train/                  |            |
+|    approx_kl            | 0.0715861  |
+|    clip_fraction        | 0.182      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -0.208     |
+|    explained_variance   | 0.50940156 |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.0755    |
+|    n_updates            | 510        |
+|    policy_gradient_loss | -0.0361    |
+|    value_loss           | 0.00627    |
+----------------------------------------
+----------------------------------------
+| info/                   |            |
+|    no_shield_action     | 0          |
+|    sum_collision        | 132        |
+|    sum_opened_door      | 0          |
+|    sum_picked_up        | 0          |
+|    sum_ran_into_lava    | 198        |
+|    sum_reached_goal     | 4096       |
+| rollout/                |            |
+|    ep_len_mean          | 16.8       |
+|    ep_rew_mean          | 0.604      |
+| time/                   |            |
+|    fps                  | 135        |
+|    iterations           | 53         |
+|    time_elapsed         | 799        |
+|    total_timesteps      | 108544     |
+| train/                  |            |
+|    approx_kl            | 0.08870931 |
+|    clip_fraction        | 0.239      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -0.254     |
+|    explained_variance   | 0.14159131 |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.05      |
+|    n_updates            | 520        |
+|    policy_gradient_loss | -0.0417    |
+|    value_loss           | 0.0731     |
+----------------------------------------
+----------------------------------------
+| info/                   |            |
+|    no_shield_action     | 0          |
+|    sum_collision        | 133        |
+|    sum_opened_door      | 0          |
+|    sum_picked_up        | 0          |
+|    sum_ran_into_lava    | 198        |
+|    sum_reached_goal     | 4215       |
+| rollout/                |            |
+|    ep_len_mean          | 17.3       |
+|    ep_rew_mean          | 0.634      |
+| time/                   |            |
+|    fps                  | 135        |
+|    iterations           | 54         |
+|    time_elapsed         | 815        |
+|    total_timesteps      | 110592     |
+| train/                  |            |
+|    approx_kl            | 0.06861165 |
+|    clip_fraction        | 0.194      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -0.215     |
+|    explained_variance   | 0.28416312 |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.0439    |
+|    n_updates            | 530        |
+|    policy_gradient_loss | -0.0364    |
+|    value_loss           | 0.0341     |
+----------------------------------------
+----------------------------------------
+| info/                   |            |
+|    no_shield_action     | 0          |
+|    sum_collision        | 133        |
+|    sum_opened_door      | 0          |
+|    sum_picked_up        | 0          |
+|    sum_ran_into_lava    | 201        |
+|    sum_reached_goal     | 4338       |
+| rollout/                |            |
+|    ep_len_mean          | 16.1       |
+|    ep_rew_mean          | 0.617      |
+| time/                   |            |
+|    fps                  | 135        |
+|    iterations           | 55         |
+|    time_elapsed         | 831        |
+|    total_timesteps      | 112640     |
+| train/                  |            |
+|    approx_kl            | 0.06961352 |
+|    clip_fraction        | 0.197      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -0.217     |
+|    explained_variance   | 0.39630497 |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.0577    |
+|    n_updates            | 540        |
+|    policy_gradient_loss | -0.0368    |
+|    value_loss           | 0.0173     |
+----------------------------------------
+-----------------------------------------
+| info/                   |             |
+|    no_shield_action     | 0           |
+|    sum_collision        | 134         |
+|    sum_opened_door      | 0           |
+|    sum_picked_up        | 0           |
+|    sum_ran_into_lava    | 201         |
+|    sum_reached_goal     | 4466        |
+| rollout/                |             |
+|    ep_len_mean          | 15.8        |
+|    ep_rew_mean          | 0.665       |
+| time/                   |             |
+|    fps                  | 135         |
+|    iterations           | 56          |
+|    time_elapsed         | 847         |
+|    total_timesteps      | 114688      |
+| train/                  |             |
+|    approx_kl            | 0.093252555 |
+|    clip_fraction        | 0.174       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.146      |
+|    explained_variance   | 0.29072952  |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.0147     |
+|    n_updates            | 550         |
+|    policy_gradient_loss | -0.0252     |
+|    value_loss           | 0.027       |
+-----------------------------------------
+----------------------------------------
+| info/                   |            |
+|    no_shield_action     | 0          |
+|    sum_collision        | 134        |
+|    sum_opened_door      | 0          |
+|    sum_picked_up        | 0          |
+|    sum_ran_into_lava    | 201        |
+|    sum_reached_goal     | 4594       |
+| rollout/                |            |
+|    ep_len_mean          | 15.8       |
+|    ep_rew_mean          | 0.683      |
+| time/                   |            |
+|    fps                  | 135        |
+|    iterations           | 57         |
+|    time_elapsed         | 863        |
+|    total_timesteps      | 116736     |
+| train/                  |            |
+|    approx_kl            | 0.05694413 |
+|    clip_fraction        | 0.163      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -0.188     |
+|    explained_variance   | 0.31451952 |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.0499    |
+|    n_updates            | 560        |
+|    policy_gradient_loss | -0.025     |
+|    value_loss           | 0.0142     |
+----------------------------------------
+-----------------------------------------
+| info/                   |             |
+|    no_shield_action     | 0           |
+|    sum_collision        | 135         |
+|    sum_opened_door      | 0           |
+|    sum_picked_up        | 0           |
+|    sum_ran_into_lava    | 202         |
+|    sum_reached_goal     | 4711        |
+| rollout/                |             |
+|    ep_len_mean          | 17.2        |
+|    ep_rew_mean          | 0.615       |
+| time/                   |             |
+|    fps                  | 135         |
+|    iterations           | 58          |
+|    time_elapsed         | 877         |
+|    total_timesteps      | 118784      |
+| train/                  |             |
+|    approx_kl            | 0.051300734 |
+|    clip_fraction        | 0.198       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.229      |
+|    explained_variance   | 0.6565894   |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.0414     |
+|    n_updates            | 570         |
+|    policy_gradient_loss | -0.0366     |
+|    value_loss           | 0.00272     |
+-----------------------------------------
+----------------------------------------
+| info/                   |            |
+|    no_shield_action     | 0          |
+|    sum_collision        | 136        |
+|    sum_opened_door      | 0          |
+|    sum_picked_up        | 0          |
+|    sum_ran_into_lava    | 202        |
+|    sum_reached_goal     | 4826       |
+| rollout/                |            |
+|    ep_len_mean          | 17.8       |
+|    ep_rew_mean          | 0.624      |
+| time/                   |            |
+|    fps                  | 135        |
+|    iterations           | 59         |
+|    time_elapsed         | 893        |
+|    total_timesteps      | 120832     |
+| train/                  |            |
+|    approx_kl            | 0.06167253 |
+|    clip_fraction        | 0.245      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -0.269     |
+|    explained_variance   | 0.47707242 |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.0432    |
+|    n_updates            | 580        |
+|    policy_gradient_loss | -0.0355    |
+|    value_loss           | 0.0134     |
+----------------------------------------
+-----------------------------------------
+| info/                   |             |
+|    no_shield_action     | 0           |
+|    sum_collision        | 137         |
+|    sum_opened_door      | 0           |
+|    sum_picked_up        | 0           |
+|    sum_ran_into_lava    | 205         |
+|    sum_reached_goal     | 4943        |
+| rollout/                |             |
+|    ep_len_mean          | 16.7        |
+|    ep_rew_mean          | 0.607       |
+| time/                   |             |
+|    fps                  | 134         |
+|    iterations           | 60          |
+|    time_elapsed         | 910         |
+|    total_timesteps      | 122880      |
+| train/                  |             |
+|    approx_kl            | 0.070143044 |
+|    clip_fraction        | 0.249       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.285      |
+|    explained_variance   | 0.47560787  |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.0292     |
+|    n_updates            | 590         |
+|    policy_gradient_loss | -0.0396     |
+|    value_loss           | 0.0122      |
+-----------------------------------------
+----------------------------------------
+| info/                   |            |
+|    no_shield_action     | 0          |
+|    sum_collision        | 137        |
+|    sum_opened_door      | 0          |
+|    sum_picked_up        | 0          |
+|    sum_ran_into_lava    | 205        |
+|    sum_reached_goal     | 5072       |
+| rollout/                |            |
+|    ep_len_mean          | 15.9       |
+|    ep_rew_mean          | 0.682      |
+| time/                   |            |
+|    fps                  | 134        |
+|    iterations           | 61         |
+|    time_elapsed         | 925        |
+|    total_timesteps      | 124928     |
+| train/                  |            |
+|    approx_kl            | 0.08020019 |
+|    clip_fraction        | 0.241      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -0.239     |
+|    explained_variance   | 0.4901663  |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.0481    |
+|    n_updates            | 600        |
+|    policy_gradient_loss | -0.044     |
+|    value_loss           | 0.0173     |
+----------------------------------------
+----------------------------------------
+| info/                   |            |
+|    no_shield_action     | 0          |
+|    sum_collision        | 137        |
+|    sum_opened_door      | 0          |
+|    sum_picked_up        | 0          |
+|    sum_ran_into_lava    | 205        |
+|    sum_reached_goal     | 5190       |
+| rollout/                |            |
+|    ep_len_mean          | 17.2       |
+|    ep_rew_mean          | 0.645      |
+| time/                   |            |
+|    fps                  | 134        |
+|    iterations           | 62         |
+|    time_elapsed         | 941        |
+|    total_timesteps      | 126976     |
+| train/                  |            |
+|    approx_kl            | 0.10362897 |
+|    clip_fraction        | 0.175      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -0.165     |
+|    explained_variance   | 0.6841042  |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.0355    |
+|    n_updates            | 610        |
+|    policy_gradient_loss | -0.0388    |
+|    value_loss           | 0.00389    |
+----------------------------------------
+----------------------------------------
+| info/                   |            |
+|    no_shield_action     | 0          |
+|    sum_collision        | 138        |
+|    sum_opened_door      | 0          |
+|    sum_picked_up        | 0          |
+|    sum_ran_into_lava    | 205        |
+|    sum_reached_goal     | 5322       |
+| rollout/                |            |
+|    ep_len_mean          | 15.4       |
+|    ep_rew_mean          | 0.672      |
+| time/                   |            |
+|    fps                  | 134        |
+|    iterations           | 63         |
+|    time_elapsed         | 956        |
+|    total_timesteps      | 129024     |
+| train/                  |            |
+|    approx_kl            | 0.16728215 |
+|    clip_fraction        | 0.235      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -0.158     |
+|    explained_variance   | 0.56350976 |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.053     |
+|    n_updates            | 620        |
+|    policy_gradient_loss | -0.0335    |
+|    value_loss           | 0.00438    |
+----------------------------------------
+----------------------------------------
+| info/                   |            |
+|    no_shield_action     | 0          |
+|    sum_collision        | 139        |
+|    sum_opened_door      | 0          |
+|    sum_picked_up        | 0          |
+|    sum_ran_into_lava    | 205        |
+|    sum_reached_goal     | 5461       |
+| rollout/                |            |
+|    ep_len_mean          | 14.7       |
+|    ep_rew_mean          | 0.685      |
+| time/                   |            |
+|    fps                  | 134        |
+|    iterations           | 64         |
+|    time_elapsed         | 972        |
+|    total_timesteps      | 131072     |
+| train/                  |            |
+|    approx_kl            | 0.06693945 |
+|    clip_fraction        | 0.142      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -0.122     |
+|    explained_variance   | 0.6256256  |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.0139    |
+|    n_updates            | 630        |
+|    policy_gradient_loss | -0.0209    |
+|    value_loss           | 0.00518    |
+----------------------------------------
+----------------------------------------
+| info/                   |            |
+|    no_shield_action     | 0          |
+|    sum_collision        | 139        |
+|    sum_opened_door      | 0          |
+|    sum_picked_up        | 0          |
+|    sum_ran_into_lava    | 207        |
+|    sum_reached_goal     | 5590       |
+| rollout/                |            |
+|    ep_len_mean          | 15.4       |
+|    ep_rew_mean          | 0.651      |
+| time/                   |            |
+|    fps                  | 134        |
+|    iterations           | 65         |
+|    time_elapsed         | 987        |
+|    total_timesteps      | 133120     |
+| train/                  |            |
+|    approx_kl            | 0.12418108 |
+|    clip_fraction        | 0.117      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -0.0945    |
+|    explained_variance   | 0.42695004 |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.0352    |
+|    n_updates            | 640        |
+|    policy_gradient_loss | -0.0204    |
+|    value_loss           | 0.013      |
+----------------------------------------
+-----------------------------------------
+| info/                   |             |
+|    no_shield_action     | 0           |
+|    sum_collision        | 140         |
+|    sum_opened_door      | 0           |
+|    sum_picked_up        | 0           |
+|    sum_ran_into_lava    | 208         |
+|    sum_reached_goal     | 5713        |
+| rollout/                |             |
+|    ep_len_mean          | 16.4        |
+|    ep_rew_mean          | 0.632       |
+| time/                   |             |
+|    fps                  | 134         |
+|    iterations           | 66          |
+|    time_elapsed         | 1006        |
+|    total_timesteps      | 135168      |
+| train/                  |             |
+|    approx_kl            | 0.088907175 |
+|    clip_fraction        | 0.185       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.178      |
+|    explained_variance   | 0.4793439   |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.0318     |
+|    n_updates            | 650         |
+|    policy_gradient_loss | -0.0389     |
+|    value_loss           | 0.00709     |
+-----------------------------------------
+----------------------------------------
+| info/                   |            |
+|    no_shield_action     | 0          |
+|    sum_collision        | 141        |
+|    sum_opened_door      | 0          |
+|    sum_picked_up        | 0          |
+|    sum_ran_into_lava    | 214        |
+|    sum_reached_goal     | 5850       |
+| rollout/                |            |
+|    ep_len_mean          | 14.5       |
+|    ep_rew_mean          | 0.611      |
+| time/                   |            |
+|    fps                  | 134        |
+|    iterations           | 67         |
+|    time_elapsed         | 1022       |
+|    total_timesteps      | 137216     |
+| train/                  |            |
+|    approx_kl            | 0.08269586 |
+|    clip_fraction        | 0.182      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -0.17      |
+|    explained_variance   | 0.3938018  |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.026     |
+|    n_updates            | 660        |
+|    policy_gradient_loss | -0.032     |
+|    value_loss           | 0.0117     |
+----------------------------------------
+----------------------------------------
+| info/                   |            |
+|    no_shield_action     | 0          |
+|    sum_collision        | 141        |
+|    sum_opened_door      | 0          |
+|    sum_picked_up        | 0          |
+|    sum_ran_into_lava    | 214        |
+|    sum_reached_goal     | 5994       |
+| rollout/                |            |
+|    ep_len_mean          | 14.2       |
+|    ep_rew_mean          | 0.716      |
+| time/                   |            |
+|    fps                  | 133        |
+|    iterations           | 68         |
+|    time_elapsed         | 1041       |
+|    total_timesteps      | 139264     |
+| train/                  |            |
+|    approx_kl            | 0.06463304 |
+|    clip_fraction        | 0.11       |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -0.0947    |
+|    explained_variance   | 0.4942878  |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.0231    |
+|    n_updates            | 670        |
+|    policy_gradient_loss | -0.029     |
+|    value_loss           | 0.0158     |
+----------------------------------------
+-----------------------------------------
+| info/                   |             |
+|    no_shield_action     | 0           |
+|    sum_collision        | 141         |
+|    sum_opened_door      | 0           |
+|    sum_picked_up        | 0           |
+|    sum_ran_into_lava    | 217         |
+|    sum_reached_goal     | 6119        |
+| rollout/                |             |
+|    ep_len_mean          | 15.7        |
+|    ep_rew_mean          | 0.646       |
+| time/                   |             |
+|    fps                  | 133         |
+|    iterations           | 69          |
+|    time_elapsed         | 1058        |
+|    total_timesteps      | 141312      |
+| train/                  |             |
+|    approx_kl            | 0.044349518 |
+|    clip_fraction        | 0.0907      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.103      |
+|    explained_variance   | 0.20814371  |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.0318     |
+|    n_updates            | 680         |
+|    policy_gradient_loss | -0.0121     |
+|    value_loss           | 0.00264     |
+-----------------------------------------
+----------------------------------------
+| info/                   |            |
+|    no_shield_action     | 0          |
+|    sum_collision        | 141        |
+|    sum_opened_door      | 0          |
+|    sum_picked_up        | 0          |
+|    sum_ran_into_lava    | 218        |
+|    sum_reached_goal     | 6244       |
+| rollout/                |            |
+|    ep_len_mean          | 16.3       |
+|    ep_rew_mean          | 0.655      |
+| time/                   |            |
+|    fps                  | 133        |
+|    iterations           | 70         |
+|    time_elapsed         | 1074       |
+|    total_timesteps      | 143360     |
+| train/                  |            |
+|    approx_kl            | 0.11863062 |
+|    clip_fraction        | 0.191      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -0.15      |
+|    explained_variance   | 0.59706485 |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.0223    |
+|    n_updates            | 690        |
+|    policy_gradient_loss | -0.0291    |
+|    value_loss           | 0.00287    |
+----------------------------------------
+-----------------------------------------
+| info/                   |             |
+|    no_shield_action     | 0           |
+|    sum_collision        | 141         |
+|    sum_opened_door      | 0           |
+|    sum_picked_up        | 0           |
+|    sum_ran_into_lava    | 219         |
+|    sum_reached_goal     | 6373        |
+| rollout/                |             |
+|    ep_len_mean          | 15.8        |
+|    ep_rew_mean          | 0.665       |
+| time/                   |             |
+|    fps                  | 133         |
+|    iterations           | 71          |
+|    time_elapsed         | 1090        |
+|    total_timesteps      | 145408      |
+| train/                  |             |
+|    approx_kl            | 0.062883265 |
+|    clip_fraction        | 0.167       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.185      |
+|    explained_variance   | 0.45381767  |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.0372     |
+|    n_updates            | 700         |
+|    policy_gradient_loss | -0.0282     |
+|    value_loss           | 0.0104      |
+-----------------------------------------
+----------------------------------------
+| info/                   |            |
+|    no_shield_action     | 0          |
+|    sum_collision        | 143        |
+|    sum_opened_door      | 0          |
+|    sum_picked_up        | 0          |
+|    sum_ran_into_lava    | 219        |
+|    sum_reached_goal     | 6510       |
+| rollout/                |            |
+|    ep_len_mean          | 14.6       |
+|    ep_rew_mean          | 0.688      |
+| time/                   |            |
+|    fps                  | 133        |
+|    iterations           | 72         |
+|    time_elapsed         | 1107       |
+|    total_timesteps      | 147456     |
+| train/                  |            |
+|    approx_kl            | 0.07398927 |
+|    clip_fraction        | 0.14       |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -0.12      |
+|    explained_variance   | 0.5620903  |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.0315    |
+|    n_updates            | 710        |
+|    policy_gradient_loss | -0.0254    |
+|    value_loss           | 0.00874    |
+----------------------------------------
+-----------------------------------------
+| info/                   |             |
+|    no_shield_action     | 0           |
+|    sum_collision        | 143         |
+|    sum_opened_door      | 0           |
+|    sum_picked_up        | 0           |
+|    sum_ran_into_lava    | 219         |
+|    sum_reached_goal     | 6632        |
+| rollout/                |             |
+|    ep_len_mean          | 16.8        |
+|    ep_rew_mean          | 0.663       |
+| time/                   |             |
+|    fps                  | 133         |
+|    iterations           | 73          |
+|    time_elapsed         | 1122        |
+|    total_timesteps      | 149504      |
+| train/                  |             |
+|    approx_kl            | 0.078737184 |
+|    clip_fraction        | 0.103       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.0978     |
+|    explained_variance   | 0.7169527   |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.0382     |
+|    n_updates            | 720         |
+|    policy_gradient_loss | -0.0219     |
+|    value_loss           | 0.00337     |
+-----------------------------------------
+----------------------------------------
+| info/                   |            |
+|    no_shield_action     | 0          |
+|    sum_collision        | 144        |
+|    sum_opened_door      | 0          |
+|    sum_picked_up        | 0          |
+|    sum_ran_into_lava    | 219        |
+|    sum_reached_goal     | 6756       |
+| rollout/                |            |
+|    ep_len_mean          | 16.3       |
+|    ep_rew_mean          | 0.654      |
+| time/                   |            |
+|    fps                  | 133        |
+|    iterations           | 74         |
+|    time_elapsed         | 1137       |
+|    total_timesteps      | 151552     |
+| train/                  |            |
+|    approx_kl            | 0.11906109 |
+|    clip_fraction        | 0.198      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -0.169     |
+|    explained_variance   | 0.37183005 |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.0154    |
+|    n_updates            | 730        |
+|    policy_gradient_loss | -0.0214    |
+|    value_loss           | 0.00279    |
+----------------------------------------
+----------------------------------------
+| info/                   |            |
+|    no_shield_action     | 0          |
+|    sum_collision        | 144        |
+|    sum_opened_door      | 0          |
+|    sum_picked_up        | 0          |
+|    sum_ran_into_lava    | 221        |
+|    sum_reached_goal     | 6891       |
+| rollout/                |            |
+|    ep_len_mean          | 14.7       |
+|    ep_rew_mean          | 0.686      |
+| time/                   |            |
+|    fps                  | 133        |
+|    iterations           | 75         |
+|    time_elapsed         | 1154       |
+|    total_timesteps      | 153600     |
+| train/                  |            |
+|    approx_kl            | 0.05701608 |
+|    clip_fraction        | 0.183      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -0.166     |
+|    explained_variance   | 0.5796781  |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.0385    |
+|    n_updates            | 740        |
+|    policy_gradient_loss | -0.0301    |
+|    value_loss           | 0.0107     |
+----------------------------------------
+-----------------------------------------
+| info/                   |             |
+|    no_shield_action     | 0           |
+|    sum_collision        | 145         |
+|    sum_opened_door      | 0           |
+|    sum_picked_up        | 0           |
+|    sum_ran_into_lava    | 221         |
+|    sum_reached_goal     | 7030        |
+| rollout/                |             |
+|    ep_len_mean          | 14.6        |
+|    ep_rew_mean          | 0.689       |
+| time/                   |             |
+|    fps                  | 133         |
+|    iterations           | 76          |
+|    time_elapsed         | 1169        |
+|    total_timesteps      | 155648      |
+| train/                  |             |
+|    approx_kl            | 0.051863156 |
+|    clip_fraction        | 0.138       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.141      |
+|    explained_variance   | 0.5409932   |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.0299     |
+|    n_updates            | 750         |
+|    policy_gradient_loss | -0.0268     |
+|    value_loss           | 0.01        |
+-----------------------------------------
+-----------------------------------------
+| info/                   |             |
+|    no_shield_action     | 0           |
+|    sum_collision        | 145         |
+|    sum_opened_door      | 0           |
+|    sum_picked_up        | 0           |
+|    sum_ran_into_lava    | 226         |
+|    sum_reached_goal     | 7172        |
+| rollout/                |             |
+|    ep_len_mean          | 14          |
+|    ep_rew_mean          | 0.66        |
+| time/                   |             |
+|    fps                  | 133         |
+|    iterations           | 77          |
+|    time_elapsed         | 1184        |
+|    total_timesteps      | 157696      |
+| train/                  |             |
+|    approx_kl            | 0.044847764 |
+|    clip_fraction        | 0.126       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.118      |
+|    explained_variance   | 0.68580794  |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.0236     |
+|    n_updates            | 760         |
+|    policy_gradient_loss | -0.0262     |
+|    value_loss           | 0.00311     |
+-----------------------------------------
+-----------------------------------------
+| info/                   |             |
+|    no_shield_action     | 0           |
+|    sum_collision        | 145         |
+|    sum_opened_door      | 0           |
+|    sum_picked_up        | 0           |
+|    sum_ran_into_lava    | 228         |
+|    sum_reached_goal     | 7325        |
+| rollout/                |             |
+|    ep_len_mean          | 13.5        |
+|    ep_rew_mean          | 0.71        |
+| time/                   |             |
+|    fps                  | 133         |
+|    iterations           | 78          |
+|    time_elapsed         | 1199        |
+|    total_timesteps      | 159744      |
+| train/                  |             |
+|    approx_kl            | 0.047460567 |
+|    clip_fraction        | 0.124       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.0971     |
+|    explained_variance   | 0.50799274  |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.0486     |
+|    n_updates            | 770         |
+|    policy_gradient_loss | -0.0274     |
+|    value_loss           | 0.0104      |
+-----------------------------------------
+-----------------------------------------
+| info/                   |             |
+|    no_shield_action     | 0           |
+|    sum_collision        | 145         |
+|    sum_opened_door      | 0           |
+|    sum_picked_up        | 0           |
+|    sum_ran_into_lava    | 245         |
+|    sum_reached_goal     | 7471        |
+| rollout/                |             |
+|    ep_len_mean          | 12.8        |
+|    ep_rew_mean          | 0.564       |
+| time/                   |             |
+|    fps                  | 133         |
+|    iterations           | 79          |
+|    time_elapsed         | 1213        |
+|    total_timesteps      | 161792      |
+| train/                  |             |
+|    approx_kl            | 0.048835352 |
+|    clip_fraction        | 0.0752      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.0483     |
+|    explained_variance   | 0.78235054  |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.00907    |
+|    n_updates            | 780         |
+|    policy_gradient_loss | -0.0224     |
+|    value_loss           | 0.0023      |
+-----------------------------------------
+----------------------------------------
+| info/                   |            |
+|    no_shield_action     | 0          |
+|    sum_collision        | 145        |
+|    sum_opened_door      | 0          |
+|    sum_picked_up        | 0          |
+|    sum_ran_into_lava    | 245        |
+|    sum_reached_goal     | 7624       |
+| rollout/                |            |
+|    ep_len_mean          | 13.3       |
+|    ep_rew_mean          | 0.735      |
+| time/                   |            |
+|    fps                  | 133        |
+|    iterations           | 80         |
+|    time_elapsed         | 1228       |
+|    total_timesteps      | 163840     |
+| train/                  |            |
+|    approx_kl            | 0.07366222 |
+|    clip_fraction        | 0.0641     |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -0.0505    |
+|    explained_variance   | 0.2901374  |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.0374    |
+|    n_updates            | 790        |
+|    policy_gradient_loss | -0.023     |
+|    value_loss           | 0.0151     |
+----------------------------------------
+-----------------------------------------
+| info/                   |             |
+|    no_shield_action     | 0           |
+|    sum_collision        | 145         |
+|    sum_opened_door      | 0           |
+|    sum_picked_up        | 0           |
+|    sum_ran_into_lava    | 245         |
+|    sum_reached_goal     | 7753        |
+| rollout/                |             |
+|    ep_len_mean          | 16.2        |
+|    ep_rew_mean          | 0.676       |
+| time/                   |             |
+|    fps                  | 133         |
+|    iterations           | 81          |
+|    time_elapsed         | 1244        |
+|    total_timesteps      | 165888      |
+| train/                  |             |
+|    approx_kl            | 0.063782774 |
+|    clip_fraction        | 0.0647      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.0889     |
+|    explained_variance   | -1.5098581  |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.00695    |
+|    n_updates            | 800         |
+|    policy_gradient_loss | -0.01       |
+|    value_loss           | 0.00423     |
+-----------------------------------------
+-----------------------------------------
+| info/                   |             |
+|    no_shield_action     | 0           |
+|    sum_collision        | 146         |
+|    sum_opened_door      | 0           |
+|    sum_picked_up        | 0           |
+|    sum_ran_into_lava    | 249         |
+|    sum_reached_goal     | 7879        |
+| rollout/                |             |
+|    ep_len_mean          | 15.7        |
+|    ep_rew_mean          | 0.607       |
+| time/                   |             |
+|    fps                  | 133         |
+|    iterations           | 82          |
+|    time_elapsed         | 1258        |
+|    total_timesteps      | 167936      |
+| train/                  |             |
+|    approx_kl            | 0.110469885 |
+|    clip_fraction        | 0.201       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.168      |
+|    explained_variance   | 0.7057846   |
+|    learning_rate        | 0.0003      |
+|    loss                 | 0.0164      |
+|    n_updates            | 810         |
+|    policy_gradient_loss | -0.0385     |
+|    value_loss           | 0.00206     |
+-----------------------------------------
+----------------------------------------
+| info/                   |            |
+|    no_shield_action     | 0          |
+|    sum_collision        | 146        |
+|    sum_opened_door      | 0          |
+|    sum_picked_up        | 0          |
+|    sum_ran_into_lava    | 250        |
+|    sum_reached_goal     | 8017       |
+| rollout/                |            |
+|    ep_len_mean          | 14.6       |
+|    ep_rew_mean          | 0.709      |
+| time/                   |            |
+|    fps                  | 133        |
+|    iterations           | 83         |
+|    time_elapsed         | 1276       |
+|    total_timesteps      | 169984     |
+| train/                  |            |
+|    approx_kl            | 0.0803629  |
+|    clip_fraction        | 0.157      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -0.146     |
+|    explained_variance   | 0.35453308 |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.0193    |
+|    n_updates            | 820        |
+|    policy_gradient_loss | -0.028     |
+|    value_loss           | 0.0277     |
+----------------------------------------
+----------------------------------------
+| info/                   |            |
+|    no_shield_action     | 0          |
+|    sum_collision        | 146        |
+|    sum_opened_door      | 0          |
+|    sum_picked_up        | 0          |
+|    sum_ran_into_lava    | 250        |
+|    sum_reached_goal     | 8163       |
+| rollout/                |            |
+|    ep_len_mean          | 14.2       |
+|    ep_rew_mean          | 0.716      |
+| time/                   |            |
+|    fps                  | 133        |
+|    iterations           | 84         |
+|    time_elapsed         | 1292       |
+|    total_timesteps      | 172032     |
+| train/                  |            |
+|    approx_kl            | 0.04724189 |
+|    clip_fraction        | 0.086      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -0.0871    |
+|    explained_variance   | 0.5501197  |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.0157    |
+|    n_updates            | 830        |
+|    policy_gradient_loss | -0.0189    |
+|    value_loss           | 0.00494    |
+----------------------------------------
+-----------------------------------------
+| info/                   |             |
+|    no_shield_action     | 0           |
+|    sum_collision        | 146         |
+|    sum_opened_door      | 0           |
+|    sum_picked_up        | 0           |
+|    sum_ran_into_lava    | 250         |
+|    sum_reached_goal     | 8307        |
+| rollout/                |             |
+|    ep_len_mean          | 14.2        |
+|    ep_rew_mean          | 0.716       |
+| time/                   |             |
+|    fps                  | 133         |
+|    iterations           | 85          |
+|    time_elapsed         | 1307        |
+|    total_timesteps      | 174080      |
+| train/                  |             |
+|    approx_kl            | 0.026962932 |
+|    clip_fraction        | 0.0808      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.0824     |
+|    explained_variance   | 0.7498071   |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.0194     |
+|    n_updates            | 840         |
+|    policy_gradient_loss | -0.0168     |
+|    value_loss           | 0.00146     |
+-----------------------------------------
+-----------------------------------------
+| info/                   |             |
+|    no_shield_action     | 0           |
+|    sum_collision        | 146         |
+|    sum_opened_door      | 0           |
+|    sum_picked_up        | 0           |
+|    sum_ran_into_lava    | 250         |
+|    sum_reached_goal     | 8455        |
+| rollout/                |             |
+|    ep_len_mean          | 13.9        |
+|    ep_rew_mean          | 0.723       |
+| time/                   |             |
+|    fps                  | 133         |
+|    iterations           | 86          |
+|    time_elapsed         | 1323        |
+|    total_timesteps      | 176128      |
+| train/                  |             |
+|    approx_kl            | 0.036431435 |
+|    clip_fraction        | 0.0866      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.0741     |
+|    explained_variance   | 0.89254355  |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.0231     |
+|    n_updates            | 850         |
+|    policy_gradient_loss | -0.0248     |
+|    value_loss           | 0.00114     |
+-----------------------------------------
+-----------------------------------------
+| info/                   |             |
+|    no_shield_action     | 0           |
+|    sum_collision        | 146         |
+|    sum_opened_door      | 0           |
+|    sum_picked_up        | 0           |
+|    sum_ran_into_lava    | 250         |
+|    sum_reached_goal     | 8612        |
+| rollout/                |             |
+|    ep_len_mean          | 13.2        |
+|    ep_rew_mean          | 0.736       |
+| time/                   |             |
+|    fps                  | 133         |
+|    iterations           | 87          |
+|    time_elapsed         | 1338        |
+|    total_timesteps      | 178176      |
+| train/                  |             |
+|    approx_kl            | 0.052385397 |
+|    clip_fraction        | 0.0523      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.0359     |
+|    explained_variance   | 0.91923285  |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.0316     |
+|    n_updates            | 860         |
+|    policy_gradient_loss | -0.0153     |
+|    value_loss           | 0.000581    |
+-----------------------------------------
+-----------------------------------------
+| info/                   |             |
+|    no_shield_action     | 0           |
+|    sum_collision        | 146         |
+|    sum_opened_door      | 0           |
+|    sum_picked_up        | 0           |
+|    sum_ran_into_lava    | 250         |
+|    sum_reached_goal     | 8769        |
+| rollout/                |             |
+|    ep_len_mean          | 13.1        |
+|    ep_rew_mean          | 0.738       |
+| time/                   |             |
+|    fps                  | 133         |
+|    iterations           | 88          |
+|    time_elapsed         | 1353        |
+|    total_timesteps      | 180224      |
+| train/                  |             |
+|    approx_kl            | 0.027708612 |
+|    clip_fraction        | 0.0343      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.025      |
+|    explained_variance   | 0.95838314  |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.0237     |
+|    n_updates            | 870         |
+|    policy_gradient_loss | -0.0132     |
+|    value_loss           | 0.000214    |
+-----------------------------------------
+----------------------------------------
+| info/                   |            |
+|    no_shield_action     | 0          |
+|    sum_collision        | 146        |
+|    sum_opened_door      | 0          |
+|    sum_picked_up        | 0          |
+|    sum_ran_into_lava    | 250        |
+|    sum_reached_goal     | 8926       |
+| rollout/                |            |
+|    ep_len_mean          | 13.3       |
+|    ep_rew_mean          | 0.733      |
+| time/                   |            |
+|    fps                  | 133        |
+|    iterations           | 89         |
+|    time_elapsed         | 1368       |
+|    total_timesteps      | 182272     |
+| train/                  |            |
+|    approx_kl            | 0.00703552 |
+|    clip_fraction        | 0.0265     |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -0.0218    |
+|    explained_variance   | 0.9773444  |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.00525   |
+|    n_updates            | 880        |
+|    policy_gradient_loss | -0.00678   |
+|    value_loss           | 0.000134   |
+----------------------------------------
+-----------------------------------------
+| info/                   |             |
+|    no_shield_action     | 0           |
+|    sum_collision        | 146         |
+|    sum_opened_door      | 0           |
+|    sum_picked_up        | 0           |
+|    sum_ran_into_lava    | 250         |
+|    sum_reached_goal     | 9080        |
+| rollout/                |             |
+|    ep_len_mean          | 13.3        |
+|    ep_rew_mean          | 0.734       |
+| time/                   |             |
+|    fps                  | 133         |
+|    iterations           | 90          |
+|    time_elapsed         | 1382        |
+|    total_timesteps      | 184320      |
+| train/                  |             |
+|    approx_kl            | 0.031004729 |
+|    clip_fraction        | 0.0311      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.0211     |
+|    explained_variance   | 0.98166186  |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.0368     |
+|    n_updates            | 890         |
+|    policy_gradient_loss | -0.0117     |
+|    value_loss           | 0.000251    |
+-----------------------------------------
+----------------------------------------
+| info/                   |            |
+|    no_shield_action     | 0          |
+|    sum_collision        | 146        |
+|    sum_opened_door      | 0          |
+|    sum_picked_up        | 0          |
+|    sum_ran_into_lava    | 250        |
+|    sum_reached_goal     | 9238       |
+| rollout/                |            |
+|    ep_len_mean          | 13         |
+|    ep_rew_mean          | 0.74       |
+| time/                   |            |
+|    fps                  | 133        |
+|    iterations           | 91         |
+|    time_elapsed         | 1397       |
+|    total_timesteps      | 186368     |
+| train/                  |            |
+|    approx_kl            | 0.00852588 |
+|    clip_fraction        | 0.0216     |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -0.0148    |
+|    explained_variance   | 0.98673487 |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.024     |
+|    n_updates            | 900        |
+|    policy_gradient_loss | -0.0116    |
+|    value_loss           | 7.45e-05   |
+----------------------------------------
+-----------------------------------------
+| info/                   |             |
+|    no_shield_action     | 0           |
+|    sum_collision        | 146         |
+|    sum_opened_door      | 0           |
+|    sum_picked_up        | 0           |
+|    sum_ran_into_lava    | 250         |
+|    sum_reached_goal     | 9394        |
+| rollout/                |             |
+|    ep_len_mean          | 13.2        |
+|    ep_rew_mean          | 0.735       |
+| time/                   |             |
+|    fps                  | 133         |
+|    iterations           | 92          |
+|    time_elapsed         | 1412        |
+|    total_timesteps      | 188416      |
+| train/                  |             |
+|    approx_kl            | 0.013870429 |
+|    clip_fraction        | 0.0159      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.0113     |
+|    explained_variance   | 0.9913163   |
+|    learning_rate        | 0.0003      |
+|    loss                 | -9.23e-05   |
+|    n_updates            | 910         |
+|    policy_gradient_loss | -0.00739    |
+|    value_loss           | 6.82e-05    |
+-----------------------------------------
+-----------------------------------------
+| info/                   |             |
+|    no_shield_action     | 0           |
+|    sum_collision        | 146         |
+|    sum_opened_door      | 0           |
+|    sum_picked_up        | 0           |
+|    sum_ran_into_lava    | 250         |
+|    sum_reached_goal     | 9554        |
+| rollout/                |             |
+|    ep_len_mean          | 12.8        |
+|    ep_rew_mean          | 0.743       |
+| time/                   |             |
+|    fps                  | 133         |
+|    iterations           | 93          |
+|    time_elapsed         | 1427        |
+|    total_timesteps      | 190464      |
+| train/                  |             |
+|    approx_kl            | 0.015428285 |
+|    clip_fraction        | 0.0281      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.0223     |
+|    explained_variance   | 0.9430218   |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.0261     |
+|    n_updates            | 920         |
+|    policy_gradient_loss | -0.0138     |
+|    value_loss           | 0.00044     |
+-----------------------------------------
+-----------------------------------------
+| info/                   |             |
+|    no_shield_action     | 0           |
+|    sum_collision        | 146         |
+|    sum_opened_door      | 0           |
+|    sum_picked_up        | 0           |
+|    sum_ran_into_lava    | 250         |
+|    sum_reached_goal     | 9712        |
+| rollout/                |             |
+|    ep_len_mean          | 12.8        |
+|    ep_rew_mean          | 0.744       |
+| time/                   |             |
+|    fps                  | 133         |
+|    iterations           | 94          |
+|    time_elapsed         | 1442        |
+|    total_timesteps      | 192512      |
+| train/                  |             |
+|    approx_kl            | 0.025961865 |
+|    clip_fraction        | 0.0348      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.0237     |
+|    explained_variance   | 0.96637857  |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.0422     |
+|    n_updates            | 930         |
+|    policy_gradient_loss | -0.0181     |
+|    value_loss           | 0.00038     |
+-----------------------------------------
+----------------------------------------
+| info/                   |            |
+|    no_shield_action     | 0          |
+|    sum_collision        | 146        |
+|    sum_opened_door      | 0          |
+|    sum_picked_up        | 0          |
+|    sum_ran_into_lava    | 250        |
+|    sum_reached_goal     | 9858       |
+| rollout/                |            |
+|    ep_len_mean          | 14         |
+|    ep_rew_mean          | 0.72       |
+| time/                   |            |
+|    fps                  | 133        |
+|    iterations           | 95         |
+|    time_elapsed         | 1457       |
+|    total_timesteps      | 194560     |
+| train/                  |            |
+|    approx_kl            | 0.07399535 |
+|    clip_fraction        | 0.0244     |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -0.0108    |
+|    explained_variance   | 0.98543465 |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.00567   |
+|    n_updates            | 940        |
+|    policy_gradient_loss | -0.0109    |
+|    value_loss           | 9.5e-05    |
+----------------------------------------
+-----------------------------------------
+| info/                   |             |
+|    no_shield_action     | 0           |
+|    sum_collision        | 146         |
+|    sum_opened_door      | 0           |
+|    sum_picked_up        | 0           |
+|    sum_ran_into_lava    | 257         |
+|    sum_reached_goal     | 10014       |
+| rollout/                |             |
+|    ep_len_mean          | 12.8        |
+|    ep_rew_mean          | 0.665       |
+| time/                   |             |
+|    fps                  | 133         |
+|    iterations           | 96          |
+|    time_elapsed         | 1471        |
+|    total_timesteps      | 196608      |
+| train/                  |             |
+|    approx_kl            | 0.106781885 |
+|    clip_fraction        | 0.0663      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.0413     |
+|    explained_variance   | 0.9568579   |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.0546     |
+|    n_updates            | 950         |
+|    policy_gradient_loss | -0.0249     |
+|    value_loss           | 0.000192    |
+-----------------------------------------
+-----------------------------------------
+| info/                   |             |
+|    no_shield_action     | 0           |
+|    sum_collision        | 146         |
+|    sum_opened_door      | 0           |
+|    sum_picked_up        | 0           |
+|    sum_ran_into_lava    | 257         |
+|    sum_reached_goal     | 10169       |
+| rollout/                |             |
+|    ep_len_mean          | 13.2        |
+|    ep_rew_mean          | 0.736       |
+| time/                   |             |
+|    fps                  | 133         |
+|    iterations           | 97          |
+|    time_elapsed         | 1486        |
+|    total_timesteps      | 198656      |
+| train/                  |             |
+|    approx_kl            | 0.051800936 |
+|    clip_fraction        | 0.0435      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.0226     |
+|    explained_variance   | 0.45480466  |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.00908    |
+|    n_updates            | 960         |
+|    policy_gradient_loss | -0.0167     |
+|    value_loss           | 0.00837     |
+-----------------------------------------
+-----------------------------------------
+| info/                   |             |
+|    no_shield_action     | 0           |
+|    sum_collision        | 148         |
+|    sum_opened_door      | 0           |
+|    sum_picked_up        | 0           |
+|    sum_ran_into_lava    | 257         |
+|    sum_reached_goal     | 10304       |
+| rollout/                |             |
+|    ep_len_mean          | 15.2        |
+|    ep_rew_mean          | 0.656       |
+| time/                   |             |
+|    fps                  | 133         |
+|    iterations           | 98          |
+|    time_elapsed         | 1501        |
+|    total_timesteps      | 200704      |
+| train/                  |             |
+|    approx_kl            | 0.09631318  |
+|    clip_fraction        | 0.0484      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.039      |
+|    explained_variance   | -0.15161097 |
+|    learning_rate        | 0.0003      |
+|    loss                 | 0.0643      |
+|    n_updates            | 970         |
+|    policy_gradient_loss | -0.00737    |
+|    value_loss           | 0.00218     |
+-----------------------------------------
+Exception ignored in: <function MiniGridShieldHandler.__del__ at 0x73bcf5bc89d0>
+Traceback (most recent call last):
+  File "/opt/notebooks/utils.py", line 94, in __del__
+    shutil.rmtree(self.tmp_dir_name)
+  File "/usr/lib/python3.10/shutil.py", line 712, in rmtree
+    onerror(os.lstat, path, sys.exc_info())
+  File "/usr/lib/python3.10/shutil.py", line 710, in rmtree
+    orig_st = os.lstat(path)
+FileNotFoundError: [Errno 2] No such file or directory: '/opt/notebooks/shielding_files_20241118T162008_b42axb4w'
+Exception ignored in: <function MiniGridShieldHandler.__del__ at 0x73bcf5bc89d0>
+Traceback (most recent call last):
+  File "/opt/notebooks/utils.py", line 94, in __del__
+    shutil.rmtree(self.tmp_dir_name)
+  File "/usr/lib/python3.10/shutil.py", line 712, in rmtree
+    onerror(os.lstat, path, sys.exc_info())
+  File "/usr/lib/python3.10/shutil.py", line 710, in rmtree
+    orig_st = os.lstat(path)
+FileNotFoundError: [Errno 2] No such file or directory: '/opt/notebooks/shielding_files_20241118T162002_5878e773'
+Exception ignored in: <function MiniGridShieldHandler.__del__ at 0x73bcf5bc89d0>
+Traceback (most recent call last):
+  File "/opt/notebooks/utils.py", line 94, in __del__
+    shutil.rmtree(self.tmp_dir_name)
+  File "/usr/lib/python3.10/shutil.py", line 712, in rmtree
+    onerror(os.lstat, path, sys.exc_info())
+  File "/usr/lib/python3.10/shutil.py", line 710, in rmtree
+    orig_st = os.lstat(path)
+FileNotFoundError: [Errno 2] No such file or directory: '/opt/notebooks/shielding_files_20241118T162013_di_j1p7_'
+Exception ignored in: <function MiniGridShieldHandler.__del__ at 0x73bcf5bc89d0>
+Traceback (most recent call last):
+  File "/opt/notebooks/utils.py", line 94, in __del__
+    shutil.rmtree(self.tmp_dir_name)
+  File "/usr/lib/python3.10/shutil.py", line 712, in rmtree
+    onerror(os.lstat, path, sys.exc_info())
+  File "/usr/lib/python3.10/shutil.py", line 710, in rmtree
+    orig_st = os.lstat(path)
+FileNotFoundError: [Errno 2] No such file or directory: '/opt/notebooks/shielding_files_20241118T162019_p6zu5u2o'
+Exception ignored in: <function MiniGridShieldHandler.__del__ at 0x73bcf5bc89d0>
+Traceback (most recent call last):
+  File "/opt/notebooks/utils.py", line 94, in __del__
+    shutil.rmtree(self.tmp_dir_name)
+  File "/usr/lib/python3.10/shutil.py", line 712, in rmtree
+    onerror(os.lstat, path, sys.exc_info())
+  File "/usr/lib/python3.10/shutil.py", line 710, in rmtree
+    orig_st = os.lstat(path)
+FileNotFoundError: [Errno 2] No such file or directory: '/opt/notebooks/shielding_files_20241118T162024_vhzp7e46'

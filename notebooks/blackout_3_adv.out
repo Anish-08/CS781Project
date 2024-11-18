@@ -1,0 +1,70 @@
+
+
+
+
+
+
+
+
+
+
+pygame 2.6.1 (SDL 2.28.4, Python 3.10.4)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Starting the training
+<PIL.Image.Image image mode=RGB size=256x256 at 0x76C2F87F9600>
+Directory created successfully: /opt/notebooks/shielding_files_20241117T172322_p3vqffr1
+Computing new shield
+LOG: Starting with explicit model creation...
+Elapsed time is 1.3256616592407227 seconds.
+LOG: Starting with model checking...
+Elapsed time is 0.2957298755645752 seconds.
+LOG: Starting to translate shield...
+Elapsed time is 4.983856916427612 seconds.
+Directory created successfully: /opt/notebooks/shielding_files_20241117T172329_82x1hzp8
+Computing new shield
+LOG: Starting with explicit model creation...
+Elapsed time is 1.27239990234375 seconds.
+LOG: Starting with model checking...
+Elapsed time is 0.26932287216186523 seconds.
+LOG: Starting to translate shield...
+Elapsed time is 4.922896862030029 seconds.
+Directory created successfully: /opt/notebooks/shielding_files_20241117T172336__kc39t_r
+Computing new shield
+LOG: Starting with explicit model creation...
+Elapsed time is 1.2536742687225342 seconds.
+LOG: Starting with model checking...
+Elapsed time is 0.2416844367980957 seconds.
+LOG: Starting to translate shield...
+Elapsed time is 4.627243757247925 seconds.
+Directory created successfully: /opt/notebooks/shielding_files_20241117T172342_l27ml8_i
+Computing new shield
+LOG: Starting with explicit model creation...
+Elapsed time is 1.2452259063720703 seconds.
+LOG: Starting with model checking...
+Elapsed time is 0.34864330291748047 seconds.
+LOG: Starting to translate shield...
+Elapsed time is 4.672218561172485 seconds.
+Directory created successfully: /opt/notebooks/shielding_files_20241117T172348_hber2jbe
+Computing new shield
+LOG: Starting with explicit model creation...
+Elapsed time is 1.2470955848693848 seconds.
+LOG: Starting with model checking...
+Elapsed time is 0.26819443702697754 seconds.
+LOG: Starting to translate shield...
+Elapsed time is 4.249744415283203 seconds.
+Image saved as shield_overlay_image.png
+The shield for shield_value = 0.0
+Image saved as shield_overlay_image.png
+The shield for shield_value = 0.9
+Image saved as shield_overlay_image.png
+The shield for shield_value = 0.99
+Image saved as shield_overlay_image.png
+The shield for shield_value = 0.999
+Image saved as shield_overlay_image.png
+The shield for shield_value = 1.0
+Training with shield:
+Image saved as shield_overlay_image.png
+Using cpu device
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.

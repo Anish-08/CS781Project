@@ -1,0 +1,160 @@
+2024-11-17 18:47:47.194986: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1731869267.222924   47962 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1731869267.231819   47962 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2024-11-17 18:47:47.260280: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+error: XDG_RUNTIME_DIR not set in the environment.
+
+
+Write to file /opt/notebooks/shielding_files_20241117T184751_xgkqy0v_/shield.
+
+
+Write to file /opt/notebooks/shielding_files_20241117T184800_3z9v0wo0/shield.
+
+
+Write to file /opt/notebooks/shielding_files_20241117T184808_z4xt6auy/shield.
+
+
+Write to file /opt/notebooks/shielding_files_20241117T184818_8k_nkuxs/shield.
+pygame 2.6.1 (SDL 2.28.4, Python 3.10.4)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Starting the training
+<PIL.Image.Image image mode=RGB size=352x288 at 0x7CC19D3FC250>
+Directory created successfully: /opt/notebooks/shielding_files_20241117T184751_xgkqy0v_
+/opt/Minigrid2PRISM/build/main -i /opt/notebooks/shielding_files_20241117T184751_xgkqy0v_/grid.txt -o /opt/notebooks/shielding_files_20241117T184751_xgkqy0v_/grid.prism
+Computing new shield
+LOG: Starting with explicit model creation...
+Elapsed time is 1.709416151046753 seconds.
+LOG: Starting with model checking...
+Elapsed time is 0.21735286712646484 seconds.
+LOG: Starting to translate shield...
+Elapsed time is 5.267345905303955 seconds.
+Directory created successfully: /opt/notebooks/shielding_files_20241117T184800_3z9v0wo0
+/opt/Minigrid2PRISM/build/main -i /opt/notebooks/shielding_files_20241117T184800_3z9v0wo0/grid.txt -o /opt/notebooks/shielding_files_20241117T184800_3z9v0wo0/grid.prism
+Computing new shield
+LOG: Starting with explicit model creation...
+Elapsed time is 1.6355774402618408 seconds.
+LOG: Starting with model checking...
+Elapsed time is 0.18606114387512207 seconds.
+LOG: Starting to translate shield...
+Elapsed time is 5.148061752319336 seconds.
+Directory created successfully: /opt/notebooks/shielding_files_20241117T184808_z4xt6auy
+/opt/Minigrid2PRISM/build/main -i /opt/notebooks/shielding_files_20241117T184808_z4xt6auy/grid.txt -o /opt/notebooks/shielding_files_20241117T184808_z4xt6auy/grid.prism
+Computing new shield
+LOG: Starting with explicit model creation...
+Elapsed time is 1.6358373165130615 seconds.
+LOG: Starting with model checking...
+Elapsed time is 0.22146940231323242 seconds.
+LOG: Starting to translate shield...
+Elapsed time is 5.683431386947632 seconds.
+Directory created successfully: /opt/notebooks/shielding_files_20241117T184818_8k_nkuxs
+/opt/Minigrid2PRISM/build/main -i /opt/notebooks/shielding_files_20241117T184818_8k_nkuxs/grid.txt -o /opt/notebooks/shielding_files_20241117T184818_8k_nkuxs/grid.prism
+Computing new shield
+LOG: Starting with explicit model creation...
+Elapsed time is 1.6326026916503906 seconds.
+LOG: Starting with model checking...
+Elapsed time is 0.27056336402893066 seconds.
+LOG: Starting to translate shield...
+Elapsed time is 4.935962677001953 seconds.
+Image saved as shield_overlay_image.png
+The shield for shield_value = 0.9
+Image saved as shield_overlay_image.png
+The shield for shield_value = 0.95
+Image saved as shield_overlay_image.png
+The shield for shield_value = 0.99
+Image saved as shield_overlay_image.png
+The shield for shield_value = 1.0
+Training with shield:
+Image saved as shield_overlay_image.png
+Using cpu device
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+[(array([9, 6]), 2), (array([6, 6]), 2), (array([3, 7]), 3), (array([7, 5]), 3), (array([1, 5]), 3), (array([6, 7]), 0), (array([3, 7]), 0), (array([8, 7]), 3), (array([9, 7]), 0), (array([8, 6]), 2), (array([3, 5]), 3), ('blue', (np.int64(2), np.int64(3)), 3), (np.int64(6), array([3, 5]), 3), ('blue', (np.int64(2), np.int64(2)), 3), (np.int64(0), array([3, 5]), 2), ('blue', (np.int64(2), np.int64(2)), 0), (np.int64(1), array([3, 5]), 3), ('blue', (np.int64(3), np.int64(2)), 0), (np.int64(1), array([3, 5]), 0), ('blue', (np.int64(4), np.int64(2)), 0), (np.int64(2), (np.int64(4), np.int64(5)), 0), ('blue', (np.int64(5), np.int64(2)), 0), (np.int64(1), (np.int64(4), np.int64(5)), 1), ('blue', (np.int64(6), np.int64(2)), 0), (np.int64(5), (np.int64(4), np.int64(5)), 1), ('blue', (np.int64(7), np.int64(2)), 0), (np.int64(3), (np.int64(4), np.int64(5)), 1), ('blue', (np.int64(8), np.int64(2)), 0), (np.int64(1), (np.int64(4), np.int64(5)), 2), ('blue', (np.int64(8), np.int64(2)), 1), (np.int64(5), (np.int64(4), np.int64(5)), 2), ('blue', (np.int64(8), np.int64(3)), 1), (np.int64(0), (np.int64(4), np.int64(5)), 1), ('blue', (np.int64(8), np.int64(4)), 1), (np.int64(0), (np.int64(4), np.int64(5)), 0), ('blue', (np.int64(8), np.int64(4)), 0), (np.int64(0), (np.int64(4), np.int64(5)), 3), (np.int64(2), (np.int64(4), np.int64(4)), 3)]
+terminated:  {'reached_goal': False, 'ran_into_lava': True, 'opened_door': False, 'picked_up': False, 'collision': False}
+truncated:  {'reached_goal': False, 'ran_into_lava': False, 'opened_door': False, 'picked_up': False, 'collision': False}
+truncated:  {'reached_goal': False, 'ran_into_lava': False, 'opened_door': False, 'picked_up': False, 'collision': False}
+truncated:  {'reached_goal': False, 'ran_into_lava': False, 'opened_door': False, 'picked_up': False, 'collision': False}
+truncated:  {'reached_goal': False, 'ran_into_lava': False, 'opened_door': False, 'picked_up': False, 'collision': False}
+truncated:  {'reached_goal': False, 'ran_into_lava': False, 'opened_door': False, 'picked_up': False, 'collision': False}
+[(array([5, 7]), 2), ('blue', (np.int64(2), np.int64(3)), 3), (np.int64(4), array([5, 7]), 2), ('blue', (np.int64(2), np.int64(2)), 3), (np.int64(5), array([5, 7]), 2), ('blue', (np.int64(2), np.int64(2)), 0), (np.int64(6), array([5, 7]), 2), ('blue', (np.int64(3), np.int64(2)), 0), (np.int64(5), array([5, 7]), 2), ('blue', (np.int64(4), np.int64(2)), 0), (np.int64(0), array([5, 7]), 1), ('blue', (np.int64(5), np.int64(2)), 0), (np.int64(0), array([5, 7]), 0), ('blue', (np.int64(6), np.int64(2)), 0), (np.int64(6), array([5, 7]), 0), ('blue', (np.int64(7), np.int64(2)), 0), (np.int64(6), array([5, 7]), 0), ('blue', (np.int64(8), np.int64(2)), 0), (np.int64(6), array([5, 7]), 0), ('blue', (np.int64(8), np.int64(2)), 1), (np.int64(2), (np.int64(6), np.int64(7)), 0), ('blue', (np.int64(8), np.int64(3)), 1), (np.int64(0), (np.int64(6), np.int64(7)), 3), ('blue', (np.int64(8), np.int64(4)), 1), (np.int64(2), (np.int64(6), np.int64(6)), 3), ('blue', (np.int64(8), np.int64(4)), 0), (np.int64(4), (np.int64(6), np.int64(6)), 3), ('blue', (np.int64(8), np.int64(4)), 3), (np.int64(3), (np.int64(6), np.int64(6)), 3), ('blue', (np.int64(8), np.int64(3)), 3), (np.int64(6), (np.int64(6), np.int64(6)), 3), ('blue', (np.int64(8), np.int64(2)), 3), (np.int64(2), (np.int64(6), np.int64(5)), 3), ('blue', (np.int64(8), np.int64(2)), 2), (np.int64(6), (np.int64(6), np.int64(5)), 3), (np.int64(2), (np.int64(6), np.int64(4)), 3)]
+terminated:  {'reached_goal': False, 'ran_into_lava': True, 'opened_door': False, 'picked_up': False, 'collision': False}
+[(array([4, 5]), 2), ('blue', (np.int64(2), np.int64(3)), 3), (np.int64(5), array([4, 5]), 2), ('blue', (np.int64(2), np.int64(2)), 3), (np.int64(3), array([4, 5]), 2), ('blue', (np.int64(2), np.int64(2)), 0), (np.int64(1), array([4, 5]), 3), ('blue', (np.int64(3), np.int64(2)), 0), (np.int64(1), array([4, 5]), 0), ('blue', (np.int64(4), np.int64(2)), 0), (np.int64(2), (np.int64(5), np.int64(5)), 0), ('blue', (np.int64(5), np.int64(2)), 0), (np.int64(6), (np.int64(5), np.int64(5)), 0), ('blue', (np.int64(6), np.int64(2)), 0), (np.int64(6), (np.int64(5), np.int64(5)), 0), ('blue', (np.int64(7), np.int64(2)), 0), (np.int64(5), (np.int64(5), np.int64(5)), 0), ('blue', (np.int64(8), np.int64(2)), 0), (np.int64(0), (np.int64(5), np.int64(5)), 3), ('blue', (np.int64(8), np.int64(2)), 1), (np.int64(5), (np.int64(5), np.int64(5)), 3), ('blue', (np.int64(8), np.int64(3)), 1), (np.int64(5), (np.int64(5), np.int64(5)), 3), ('blue', (np.int64(8), np.int64(4)), 1), (np.int64(1), (np.int64(5), np.int64(5)), 0), ('blue', (np.int64(8), np.int64(4)), 0), (np.int64(5), (np.int64(5), np.int64(5)), 0), ('blue', (np.int64(8), np.int64(4)), 3), (np.int64(2), (np.int64(6), np.int64(5)), 0), ('blue', (np.int64(8), np.int64(3)), 3), (np.int64(0), (np.int64(6), np.int64(5)), 3), ('blue', (np.int64(8), np.int64(2)), 3), (np.int64(0), (np.int64(6), np.int64(5)), 2), ('blue', (np.int64(8), np.int64(2)), 2), (np.int64(3), (np.int64(6), np.int64(5)), 2), ('blue', (np.int64(7), np.int64(2)), 2), (np.int64(2), (np.int64(5), np.int64(5)), 2), ('blue', (np.int64(6), np.int64(2)), 2), (np.int64(2), (np.int64(4), np.int64(5)), 2), ('blue', (np.int64(5), np.int64(2)), 2), (np.int64(5), (np.int64(4), np.int64(5)), 2), ('blue', (np.int64(4), np.int64(2)), 2), (np.int64(4), (np.int64(4), np.int64(5)), 2), ('blue', (np.int64(3), np.int64(2)), 2), (np.int64(1), (np.int64(4), np.int64(5)), 3), (np.int64(2), (np.int64(4), np.int64(4)), 3)]
+terminated:  {'reached_goal': False, 'ran_into_lava': True, 'opened_door': False, 'picked_up': False, 'collision': False}
+truncated:  {'reached_goal': False, 'ran_into_lava': False, 'opened_door': False, 'picked_up': False, 'collision': False}
+truncated:  {'reached_goal': False, 'ran_into_lava': False, 'opened_door': False, 'picked_up': False, 'collision': False}
+truncated:  {'reached_goal': False, 'ran_into_lava': False, 'opened_door': False, 'picked_up': False, 'collision': False}
+[(array([4, 5]), 3), ('blue', (np.int64(2), np.int64(3)), 3), (np.int64(6), array([4, 5]), 3), ('blue', (np.int64(2), np.int64(2)), 3), (np.int64(4), array([4, 5]), 3), ('blue', (np.int64(2), np.int64(2)), 0), (np.int64(5), array([4, 5]), 3), (np.int64(2), (np.int64(4), np.int64(4)), 3)]
+terminated:  {'reached_goal': False, 'ran_into_lava': True, 'opened_door': False, 'picked_up': False, 'collision': False}
+truncated:  {'reached_goal': False, 'ran_into_lava': False, 'opened_door': False, 'picked_up': False, 'collision': False}
+truncated:  {'reached_goal': False, 'ran_into_lava': False, 'opened_door': False, 'picked_up': False, 'collision': False}
+[(array([3, 5]), 0), ('blue', (np.int64(2), np.int64(3)), 3), (np.int64(1), array([3, 5]), 1), ('blue', (np.int64(2), np.int64(2)), 3), (np.int64(3), array([3, 5]), 1), ('blue', (np.int64(2), np.int64(2)), 0), (np.int64(3), array([3, 5]), 1), ('blue', (np.int64(3), np.int64(2)), 0), (np.int64(6), array([3, 5]), 1), ('blue', (np.int64(4), np.int64(2)), 0), (np.int64(3), array([3, 5]), 1), ('blue', (np.int64(5), np.int64(2)), 0), (np.int64(1), array([3, 5]), 2), ('blue', (np.int64(6), np.int64(2)), 0), (np.int64(1), array([3, 5]), 3), ('blue', (np.int64(7), np.int64(2)), 0), (np.int64(4), array([3, 5]), 3), ('blue', (np.int64(8), np.int64(2)), 0), (np.int64(1), array([3, 5]), 0), ('blue', (np.int64(8), np.int64(2)), 1), (np.int64(3), array([3, 5]), 0), ('blue', (np.int64(8), np.int64(3)), 1), (np.int64(3), array([3, 5]), 0), ('blue', (np.int64(8), np.int64(4)), 1), (np.int64(2), (np.int64(4), np.int64(5)), 0), ('blue', (np.int64(8), np.int64(4)), 0), (np.int64(5), (np.int64(4), np.int64(5)), 0), ('blue', (np.int64(8), np.int64(4)), 3), (np.int64(2), (np.int64(5), np.int64(5)), 0), ('blue', (np.int64(8), np.int64(3)), 3), (np.int64(3), (np.int64(5), np.int64(5)), 0), ('blue', (np.int64(8), np.int64(2)), 3), (np.int64(2), (np.int64(6), np.int64(5)), 0), ('blue', (np.int64(8), np.int64(2)), 2), (np.int64(6), (np.int64(6), np.int64(5)), 0), ('blue', (np.int64(7), np.int64(2)), 2), (np.int64(3), (np.int64(6), np.int64(5)), 0), ('blue', (np.int64(6), np.int64(2)), 2), (np.int64(0), (np.int64(6), np.int64(5)), 3), (np.int64(2), (np.int64(6), np.int64(4)), 3)]
+terminated:  {'reached_goal': False, 'ran_into_lava': True, 'opened_door': False, 'picked_up': False, 'collision': False}
+truncated:  {'reached_goal': False, 'ran_into_lava': False, 'opened_door': False, 'picked_up': False, 'collision': False}
+[(array([8, 6]), 1), ('blue', (np.int64(2), np.int64(3)), 3), (np.int64(4), array([8, 6]), 1), ('blue', (np.int64(2), np.int64(2)), 3), (np.int64(6), array([8, 6]), 1), ('blue', (np.int64(2), np.int64(2)), 0), (np.int64(6), array([8, 6]), 1), ('blue', (np.int64(3), np.int64(2)), 0), (np.int64(1), array([8, 6]), 2), ('blue', (np.int64(4), np.int64(2)), 0), (np.int64(2), (np.int64(7), np.int64(6)), 2), ('blue', (np.int64(5), np.int64(2)), 0), (np.int64(2), (np.int64(6), np.int64(6)), 2), ('blue', (np.int64(6), np.int64(2)), 0), (np.int64(3), (np.int64(6), np.int64(6)), 2), ('blue', (np.int64(7), np.int64(2)), 0), (np.int64(6), (np.int64(6), np.int64(6)), 2), ('blue', (np.int64(8), np.int64(2)), 0), (np.int64(6), (np.int64(6), np.int64(6)), 2), ('blue', (np.int64(8), np.int64(2)), 1), (np.int64(2), (np.int64(5), np.int64(6)), 2), ('blue', (np.int64(8), np.int64(3)), 1), (np.int64(5), (np.int64(5), np.int64(6)), 2), ('blue', (np.int64(8), np.int64(4)), 1), (np.int64(1), (np.int64(5), np.int64(6)), 3), ('blue', (np.int64(8), np.int64(4)), 0), (np.int64(2), (np.int64(5), np.int64(5)), 3), ('blue', (np.int64(8), np.int64(4)), 3), (np.int64(6), (np.int64(5), np.int64(5)), 3), (np.int64(2), (np.int64(5), np.int64(4)), 3)]
+terminated:  {'reached_goal': False, 'ran_into_lava': True, 'opened_door': False, 'picked_up': False, 'collision': False}
+truncated:  {'reached_goal': False, 'ran_into_lava': False, 'opened_door': False, 'picked_up': False, 'collision': False}
+truncated:  {'reached_goal': False, 'ran_into_lava': False, 'opened_door': False, 'picked_up': False, 'collision': False}
+truncated:  {'reached_goal': False, 'ran_into_lava': False, 'opened_door': False, 'picked_up': False, 'collision': False}
+truncated:  {'reached_goal': False, 'ran_into_lava': False, 'opened_door': False, 'picked_up': False, 'collision': False}
+truncated:  {'reached_goal': False, 'ran_into_lava': False, 'opened_door': False, 'picked_up': False, 'collision': False}
+truncated:  {'reached_goal': False, 'ran_into_lava': False, 'opened_door': False, 'picked_up': False, 'collision': False}
+truncated:  {'reached_goal': False, 'ran_into_lava': False, 'opened_door': False, 'picked_up': False, 'collision': False}
+truncated:  {'reached_goal': False, 'ran_into_lava': False, 'opened_door': False, 'picked_up': False, 'collision': False}
+truncated:  {'reached_goal': False, 'ran_into_lava': False, 'opened_door': False, 'picked_up': False, 'collision': False}
+truncated:  {'reached_goal': False, 'ran_into_lava': False, 'opened_door': False, 'picked_up': False, 'collision': False}
+truncated:  {'reached_goal': False, 'ran_into_lava': False, 'opened_door': False, 'picked_up': False, 'collision': False}
+[(array([4, 6]), 2), ('blue', (np.int64(2), np.int64(3)), 3), (np.int64(3), array([4, 6]), 2), ('blue', (np.int64(2), np.int64(2)), 3), (np.int64(4), array([4, 6]), 2), ('blue', (np.int64(2), np.int64(2)), 0), (np.int64(2), (np.int64(3), np.int64(6)), 2), ('blue', (np.int64(3), np.int64(2)), 0), (np.int64(4), (np.int64(3), np.int64(6)), 2), ('blue', (np.int64(4), np.int64(2)), 0), (np.int64(5), (np.int64(3), np.int64(6)), 2), ('blue', (np.int64(5), np.int64(2)), 0), (np.int64(1), (np.int64(3), np.int64(6)), 3), ('blue', (np.int64(6), np.int64(2)), 0), (np.int64(2), (np.int64(3), np.int64(5)), 3), ('blue', (np.int64(7), np.int64(2)), 0), (np.int64(6), (np.int64(3), np.int64(5)), 3), ('blue', (np.int64(8), np.int64(2)), 0), (np.int64(6), (np.int64(3), np.int64(5)), 3), ('blue', (np.int64(8), np.int64(2)), 1), (np.int64(3), (np.int64(3), np.int64(5)), 3), ('blue', (np.int64(8), np.int64(3)), 1), (np.int64(1), (np.int64(3), np.int64(5)), 0), ('blue', (np.int64(8), np.int64(4)), 1), (np.int64(2), (np.int64(4), np.int64(5)), 0), ('blue', (np.int64(8), np.int64(4)), 0), (np.int64(0), (np.int64(4), np.int64(5)), 3), (np.int64(2), (np.int64(4), np.int64(4)), 3)]
+terminated:  {'reached_goal': False, 'ran_into_lava': True, 'opened_door': False, 'picked_up': False, 'collision': False}
+truncated:  {'reached_goal': False, 'ran_into_lava': False, 'opened_door': False, 'picked_up': False, 'collision': False}
+truncated:  {'reached_goal': False, 'ran_into_lava': False, 'opened_door': False, 'picked_up': False, 'collision': False}
+truncated:  {'reached_goal': False, 'ran_into_lava': False, 'opened_door': False, 'picked_up': False, 'collision': False}
+[(array([4, 6]), 2), ('blue', (np.int64(2), np.int64(3)), 3), (np.int64(4), array([4, 6]), 2), ('blue', (np.int64(2), np.int64(2)), 3), (np.int64(6), array([4, 6]), 2), ('blue', (np.int64(2), np.int64(2)), 0), (np.int64(5), array([4, 6]), 2), ('blue', (np.int64(3), np.int64(2)), 0), (np.int64(4), array([4, 6]), 2), ('blue', (np.int64(4), np.int64(2)), 0), (np.int64(1), array([4, 6]), 3), ('blue', (np.int64(5), np.int64(2)), 0), (np.int64(2), (np.int64(4), np.int64(5)), 3), (np.int64(2), (np.int64(4), np.int64(4)), 3)]
+terminated:  {'reached_goal': False, 'ran_into_lava': True, 'opened_door': False, 'picked_up': False, 'collision': False}
+truncated:  {'reached_goal': False, 'ran_into_lava': False, 'opened_door': False, 'picked_up': False, 'collision': False}
+truncated:  {'reached_goal': False, 'ran_into_lava': False, 'opened_door': False, 'picked_up': False, 'collision': False}
+truncated:  {'reached_goal': False, 'ran_into_lava': False, 'opened_door': False, 'picked_up': False, 'collision': False}
+[(array([5, 5]), 0), ('blue', (np.int64(2), np.int64(3)), 3), (np.int64(4), array([5, 5]), 0), ('blue', (np.int64(2), np.int64(2)), 3), (np.int64(6), array([5, 5]), 0), ('blue', (np.int64(2), np.int64(2)), 0), (np.int64(4), array([5, 5]), 0), ('blue', (np.int64(3), np.int64(2)), 0), (np.int64(0), array([5, 5]), 3), (np.int64(2), (np.int64(5), np.int64(4)), 3)]
+terminated:  {'reached_goal': False, 'ran_into_lava': True, 'opened_door': False, 'picked_up': False, 'collision': False}
+truncated:  {'reached_goal': False, 'ran_into_lava': False, 'opened_door': False, 'picked_up': False, 'collision': False}
+[(array([3, 5]), 1), ('blue', (np.int64(2), np.int64(3)), 3), (np.int64(5), array([3, 5]), 1), ('blue', (np.int64(2), np.int64(2)), 3), (np.int64(0), array([3, 5]), 0), ('blue', (np.int64(2), np.int64(2)), 0), (np.int64(6), array([3, 5]), 0), ('blue', (np.int64(3), np.int64(2)), 0), (np.int64(4), array([3, 5]), 0), ('blue', (np.int64(4), np.int64(2)), 0), (np.int64(4), array([3, 5]), 0), ('blue', (np.int64(5), np.int64(2)), 0), (np.int64(4), array([3, 5]), 0), ('blue', (np.int64(6), np.int64(2)), 0), (np.int64(5), array([3, 5]), 0), ('blue', (np.int64(7), np.int64(2)), 0), (np.int64(4), array([3, 5]), 0), ('blue', (np.int64(8), np.int64(2)), 0), (np.int64(0), array([3, 5]), 3), (np.int64(2), (np.int64(3), np.int64(4)), 3)]
+terminated:  {'reached_goal': False, 'ran_into_lava': True, 'opened_door': False, 'picked_up': False, 'collision': False}
+[(array([6, 6]), 2), ('blue', (np.int64(2), np.int64(3)), 3), (np.int64(4), array([6, 6]), 2), ('blue', (np.int64(2), np.int64(2)), 3), (np.int64(1), array([6, 6]), 3), ('blue', (np.int64(2), np.int64(2)), 0), (np.int64(5), array([6, 6]), 3), ('blue', (np.int64(3), np.int64(2)), 0), (np.int64(1), array([6, 6]), 0), ('blue', (np.int64(4), np.int64(2)), 0), (np.int64(0), array([6, 6]), 3), ('blue', (np.int64(5), np.int64(2)), 0), (np.int64(6), array([6, 6]), 3), ('blue', (np.int64(6), np.int64(2)), 0), (np.int64(2), (np.int64(6), np.int64(5)), 3), (np.int64(2), (np.int64(6), np.int64(4)), 3)]
+terminated:  {'reached_goal': False, 'ran_into_lava': True, 'opened_door': False, 'picked_up': False, 'collision': False}
+[(array([9, 6]), 3), ('blue', (np.int64(2), np.int64(3)), 3), (np.int64(2), (np.int64(9), np.int64(5)), 3), ('blue', (np.int64(2), np.int64(2)), 3), (np.int64(0), (np.int64(9), np.int64(5)), 2), ('blue', (np.int64(2), np.int64(2)), 0), (np.int64(3), (np.int64(9), np.int64(5)), 2), ('blue', (np.int64(3), np.int64(2)), 0), (np.int64(1), (np.int64(9), np.int64(5)), 3), ('blue', (np.int64(4), np.int64(2)), 0), (np.int64(2), (np.int64(9), np.int64(4)), 3), ('blue', (np.int64(5), np.int64(2)), 0), (np.int64(0), (np.int64(9), np.int64(4)), 2), ('blue', (np.int64(6), np.int64(2)), 0), (np.int64(2), (np.int64(8), np.int64(4)), 2), (np.int64(2), (np.int64(7), np.int64(4)), 2)]
+terminated:  {'reached_goal': False, 'ran_into_lava': True, 'opened_door': False, 'picked_up': False, 'collision': False}
+[(array([6, 7]), 0), ('blue', (np.int64(2), np.int64(3)), 3), (np.int64(0), array([6, 7]), 3), ('blue', (np.int64(2), np.int64(2)), 3), (np.int64(2), (np.int64(6), np.int64(6)), 3), ('blue', (np.int64(2), np.int64(2)), 0), (np.int64(6), (np.int64(6), np.int64(6)), 3), ('blue', (np.int64(3), np.int64(2)), 0), (np.int64(5), (np.int64(6), np.int64(6)), 3), ('blue', (np.int64(4), np.int64(2)), 0), (np.int64(3), (np.int64(6), np.int64(6)), 3), ('blue', (np.int64(5), np.int64(2)), 0), (np.int64(3), (np.int64(6), np.int64(6)), 3), ('blue', (np.int64(6), np.int64(2)), 0), (np.int64(1), (np.int64(6), np.int64(6)), 0), ('blue', (np.int64(7), np.int64(2)), 0), (np.int64(3), (np.int64(6), np.int64(6)), 0), ('blue', (np.int64(8), np.int64(2)), 0), (np.int64(3), (np.int64(6), np.int64(6)), 0), ('blue', (np.int64(8), np.int64(2)), 1), (np.int64(0), (np.int64(6), np.int64(6)), 3), ('blue', (np.int64(8), np.int64(3)), 1), (np.int64(6), (np.int64(6), np.int64(6)), 3), ('blue', (np.int64(8), np.int64(4)), 1), (np.int64(5), (np.int64(6), np.int64(6)), 3), ('blue', (np.int64(8), np.int64(4)), 0), (np.int64(3), (np.int64(6), np.int64(6)), 3), ('blue', (np.int64(8), np.int64(4)), 3), (np.int64(4), (np.int64(6), np.int64(6)), 3), ('blue', (np.int64(8), np.int64(3)), 3), (np.int64(5), (np.int64(6), np.int64(6)), 3), ('blue', (np.int64(8), np.int64(2)), 3), (np.int64(2), (np.int64(6), np.int64(5)), 3), (np.int64(2), (np.int64(6), np.int64(4)), 3)]
+terminated:  {'reached_goal': False, 'ran_into_lava': True, 'opened_door': False, 'picked_up': False, 'collision': False}
+truncated:  {'reached_goal': False, 'ran_into_lava': False, 'opened_door': False, 'picked_up': False, 'collision': False}
+truncated:  {'reached_goal': False, 'ran_into_lava': False, 'opened_door': False, 'picked_up': False, 'collision': False}
+truncated:  {'reached_goal': False, 'ran_into_lava': False, 'opened_door': False, 'picked_up': False, 'collision': False}
+truncated:  {'reached_goal': False, 'ran_into_lava': False, 'opened_door': False, 'picked_up': False, 'collision': False}
+[(array([2, 5]), 0), ('blue', (np.int64(2), np.int64(3)), 3), (np.int64(5), array([2, 5]), 0), ('blue', (np.int64(2), np.int64(2)), 3), (np.int64(2), (np.int64(3), np.int64(5)), 0), ('blue', (np.int64(2), np.int64(2)), 0), (np.int64(0), (np.int64(3), np.int64(5)), 3), ('blue', (np.int64(3), np.int64(2)), 0), (np.int64(5), (np.int64(3), np.int64(5)), 3), ('blue', (np.int64(4), np.int64(2)), 0), (np.int64(6), (np.int64(3), np.int64(5)), 3), ('blue', (np.int64(5), np.int64(2)), 0), (np.int64(4), (np.int64(3), np.int64(5)), 3), (np.int64(2), (np.int64(3), np.int64(4)), 3)]
+terminated:  {'reached_goal': False, 'ran_into_lava': True, 'opened_door': False, 'picked_up': False, 'collision': False}
+truncated:  {'reached_goal': False, 'ran_into_lava': False, 'opened_door': False, 'picked_up': False, 'collision': False}
+[(array([4, 5]), 3), ('blue', (np.int64(2), np.int64(3)), 3), (np.int64(0), array([4, 5]), 2), ('blue', (np.int64(2), np.int64(2)), 3), (np.int64(1), array([4, 5]), 3), (np.int64(2), (np.int64(4), np.int64(4)), 3)]
+terminated:  {'reached_goal': False, 'ran_into_lava': True, 'opened_door': False, 'picked_up': False, 'collision': False}
+[(array([4, 5]), 3), ('blue', (np.int64(2), np.int64(3)), 3), (np.int64(5), array([4, 5]), 3), ('blue', (np.int64(2), np.int64(2)), 3), (np.int64(1), array([4, 5]), 0), ('blue', (np.int64(2), np.int64(2)), 0), (np.int64(1), array([4, 5]), 1), ('blue', (np.int64(3), np.int64(2)), 0), (np.int64(0), array([4, 5]), 0), ('blue', (np.int64(4), np.int64(2)), 0), (np.int64(5), array([4, 5]), 0), ('blue', (np.int64(5), np.int64(2)), 0), (np.int64(3), array([4, 5]), 0), ('blue', (np.int64(6), np.int64(2)), 0), (np.int64(4), array([4, 5]), 0), ('blue', (np.int64(7), np.int64(2)), 0), (np.int64(5), array([4, 5]), 0), ('blue', (np.int64(8), np.int64(2)), 0), (np.int64(2), (np.int64(5), np.int64(5)), 0), ('blue', (np.int64(8), np.int64(2)), 1), (np.int64(3), (np.int64(5), np.int64(5)), 0), ('blue', (np.int64(8), np.int64(3)), 1), (np.int64(6), (np.int64(5), np.int64(5)), 0), ('blue', (np.int64(8), np.int64(4)), 1), (np.int64(3), (np.int64(5), np.int64(5)), 0), ('blue', (np.int64(8), np.int64(4)), 0), (np.int64(5), (np.int64(5), np.int64(5)), 0), ('blue', (np.int64(8), np.int64(4)), 3), (np.int64(2), (np.int64(6), np.int64(5)), 0), ('blue', (np.int64(8), np.int64(3)), 3), (np.int64(6), (np.int64(6), np.int64(5)), 0), ('blue', (np.int64(8), np.int64(2)), 3), (np.int64(0), (np.int64(6), np.int64(5)), 3), ('blue', (np.int64(8), np.int64(2)), 2), (np.int64(5), (np.int64(6), np.int64(5)), 3), ('blue', (np.int64(7), np.int64(2)), 2), (np.int64(6), (np.int64(6), np.int64(5)), 3), (np.int64(2), (np.int64(6), np.int64(4)), 3)]
+terminated:  {'reached_goal': False, 'ran_into_lava': True, 'opened_door': False, 'picked_up': False, 'collision': False}
+truncated:  {'reached_goal': False, 'ran_into_lava': False, 'opened_door': False, 'picked_up': False, 'collision': False}
+[(array([2, 5]), 1), ('blue', (np.int64(2), np.int64(3)), 3), (np.int64(2), (np.int64(2), np.int64(6)), 1), ('blue', (np.int64(2), np.int64(2)), 3), (np.int64(2), (np.int64(2), np.int64(7)), 1), ('blue', (np.int64(2), np.int64(2)), 0), (np.int64(1), (np.int64(2), np.int64(7)), 2), ('blue', (np.int64(3), np.int64(2)), 0), (np.int64(2), (np.int64(1), np.int64(7)), 2), ('blue', (np.int64(4), np.int64(2)), 0), (np.int64(6), (np.int64(1), np.int64(7)), 2), ('blue', (np.int64(5), np.int64(2)), 0), (np.int64(5), (np.int64(1), np.int64(7)), 2), ('blue', (np.int64(6), np.int64(2)), 0), (np.int64(1), (np.int64(1), np.int64(7)), 3), ('blue', (np.int64(7), np.int64(2)), 0), (np.int64(2), (np.int64(1), np.int64(6)), 3), ('blue', (np.int64(8), np.int64(2)), 0), (np.int64(5), (np.int64(1), np.int64(6)), 3), ('blue', (np.int64(8), np.int64(2)), 1), (np.int64(3), (np.int64(1), np.int64(6)), 3), ('blue', (np.int64(8), np.int64(3)), 1), (np.int64(4), (np.int64(1), np.int64(6)), 3), ('blue', (np.int64(8), np.int64(4)), 1), (np.int64(6), (np.int64(1), np.int64(6)), 3), ('blue', (np.int64(8), np.int64(4)), 0), (np.int64(1), (np.int64(1), np.int64(6)), 0), ('blue', (np.int64(8), np.int64(4)), 3), (np.int64(1), (np.int64(1), np.int64(6)), 1), ('blue', (np.int64(8), np.int64(3)), 3), (np.int64(0), (np.int64(1), np.int64(6)), 0), ('blue', (np.int64(8), np.int64(2)), 3), (np.int64(2), (np.int64(2), np.int64(6)), 0), ('blue', (np.int64(8), np.int64(2)), 2), (np.int64(0), (np.int64(2), np.int64(6)), 3), ('blue', (np.int64(7), np.int64(2)), 2), (np.int64(3), (np.int64(2), np.int64(6)), 3), ('blue', (np.int64(6), np.int64(2)), 2), (np.int64(3), (np.int64(2), np.int64(6)), 3), ('blue', (np.int64(5), np.int64(2)), 2), (np.int64(6), (np.int64(2), np.int64(6)), 3), ('blue', (np.int64(4), np.int64(2)), 2), (np.int64(0), (np.int64(2), np.int64(6)), 2), ('blue', (np.int64(3), np.int64(2)), 2), (np.int64(3), (np.int64(2), np.int64(6)), 2), ('blue', (np.int64(2), np.int64(2)), 2), (np.int64(0), (np.int64(2), np.int64(6)), 1), ('blue', (np.int64(2), np.int64(2)), 1), (np.int64(6), (np.int64(2), np.int64(6)), 1), ('blue', (np.int64(2), np.int64(3)), 1), (np.int64(5), (np.int64(2), np.int64(6)), 1), ('blue', (np.int64(2), np.int64(4)), 1), (np.int64(0), (np.int64(2), np.int64(6)), 0), ('blue', (np.int64(2), np.int64(4)), 0), (np.int64(1), (np.int64(2), np.int64(6)), 1), ('blue', (np.int64(2), np.int64(4)), 3), (np.int64(0), (np.int64(2), np.int64(6)), 0), ('blue', (np.int64(2), np.int64(3)), 3), (np.int64(0), (np.int64(2), np.int64(6)), 3), ('blue', (np.int64(2), np.int64(2)), 3), (np.int64(4), (np.int64(2), np.int64(6)), 3), ('blue', (np.int64(2), np.int64(2)), 0), (np.int64(2), (np.int64(2), np.int64(5)), 3), ('blue', (np.int64(3), np.int64(2)), 0), (np.int64(3), (np.int64(2), np.int64(5)), 3), ('blue', (np.int64(4), np.int64(2)), 0), (np.int64(4), (np.int64(2), np.int64(5)), 3), ('blue', (np.int64(5), np.int64(2)), 0), (np.int64(4), (np.int64(2), np.int64(5)), 3), ('blue', (np.int64(6), np.int64(2)), 0), (np.int64(1), (np.int64(2), np.int64(5)), 0), ('blue', (np.int64(7), np.int64(2)), 0), (np.int64(2), (np.int64(3), np.int64(5)), 0), ('blue', (np.int64(8), np.int64(2)), 0), (np.int64(0), (np.int64(3), np.int64(5)), 3), ('blue', (np.int64(8), np.int64(2)), 1), (np.int64(0), (np.int64(3), np.int64(5)), 2), ('blue', (np.int64(8), np.int64(3)), 1), (np.int64(1), (np.int64(3), np.int64(5)), 3), (np.int64(2), (np.int64(3), np.int64(4)), 3)]
+terminated:  {'reached_goal': False, 'ran_into_lava': True, 'opened_door': False, 'picked_up': False, 'collision': False}
+truncated:  {'reached_goal': False, 'ran_into_lava': False, 'opened_door': False, 'picked_up': False, 'collision': False}
+-----------------------------------
+| info/                |          |
+|    no_shield_action  | 0        |
+|    sum_collision     | 0        |
+|    sum_opened_door   | 0        |
+|    sum_picked_up     | 0        |
+|    sum_ran_into_lava | 17       |
+|    sum_reached_goal  | 0        |
+| rollout/             |          |
+|    ep_len_mean       | 38.3     |
+|    ep_rew_mean       | -1.09    |
+| time/                |          |
+|    fps               | 7        |
+|    iterations        | 1        |
+|    time_elapsed      | 290      |
+|    total_timesteps   | 2048     |
+-----------------------------------

@@ -1,0 +1,23 @@
+WGWGWGWGWGWGWGWGWGWGWG
+WG        GG        WG
+WG                  WG
+WG    VRVRVRVRVR    WG
+WG  ZBVRVRVRVRVR    WG
+WG          XR      WG
+WG                  WG
+WG                  WG
+WGWGWGWGWGWGWGWGWGWGWG
+----------------------
+WGWGWGWGWGWGWGWGWGWGWG
+WG                  WG
+WG                  WG
+WG                  WG
+WG                  WG
+WG                  WG
+WG                  WG
+WG                  WG
+WGWGWGWGWGWGWGWGWGWGWG
+----------------------
+----------------------
+ProbTurnIntended:1.0
+ProbForwardIntended:1.0

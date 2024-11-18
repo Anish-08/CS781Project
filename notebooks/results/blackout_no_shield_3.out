@@ -1,0 +1,119 @@
+2024-11-16 21:16:42.972744: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1731791802.997133  383123 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1731791803.004861  383123 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2024-11-16 21:16:43.030555: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+
+
+
+
+
+
+
+
+
+
+pygame 2.6.1 (SDL 2.28.4, Python 3.10.4)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Starting the training
+<PIL.Image.Image image mode=RGB size=480x480 at 0x7D0FBE5F3EE0>
+Directory created successfully: /opt/notebooks/shielding_files_20241116T211649_n6e4zxad
+Computing new shield
+LOG: Starting with explicit model creation...
+Elapsed time is 0.06218314170837402 seconds.
+LOG: Starting with model checking...
+Elapsed time is 0.0024712085723876953 seconds.
+LOG: Starting to translate shield...
+Elapsed time is 0.114105224609375 seconds.
+Directory created successfully: /opt/notebooks/shielding_files_20241116T211649_x5139jjr
+Computing new shield
+LOG: Starting with explicit model creation...
+Elapsed time is 0.06868433952331543 seconds.
+LOG: Starting with model checking...
+Elapsed time is 0.0024306774139404297 seconds.
+LOG: Starting to translate shield...
+Elapsed time is 0.11384940147399902 seconds.
+Directory created successfully: /opt/notebooks/shielding_files_20241116T211649_p4a_viyf
+Computing new shield
+LOG: Starting with explicit model creation...
+Elapsed time is 0.06267094612121582 seconds.
+LOG: Starting with model checking...
+Elapsed time is 0.0023114681243896484 seconds.
+LOG: Starting to translate shield...
+Elapsed time is 0.1083984375 seconds.
+Directory created successfully: /opt/notebooks/shielding_files_20241116T211649_ja77adc3
+Computing new shield
+LOG: Starting with explicit model creation...
+Elapsed time is 0.05917191505432129 seconds.
+LOG: Starting with model checking...
+Elapsed time is 0.0023322105407714844 seconds.
+LOG: Starting to translate shield...
+Elapsed time is 0.11282825469970703 seconds.
+Directory created successfully: /opt/notebooks/shielding_files_20241116T211650_uv6tqt9m
+Computing new shield
+LOG: Starting with explicit model creation...
+Elapsed time is 0.06448626518249512 seconds.
+LOG: Starting with model checking...
+Elapsed time is 0.002718210220336914 seconds.
+LOG: Starting to translate shield...
+Elapsed time is 0.10959959030151367 seconds.
+Image saved as shield_overlay_image.png
+The shield for shield_value = 0.0
+Image saved as shield_overlay_image.png
+The shield for shield_value = 0.9
+Image saved as shield_overlay_image.png
+The shield for shield_value = 0.99
+Image saved as shield_overlay_image.png
+The shield for shield_value = 0.999
+Image saved as shield_overlay_image.png
+The shield for shield_value = 1.0
+Training with shield:
+Image saved as shield_overlay_image.png
+Using cpu device
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+-----------------------------------
+| info/                |          |
+|    no_shield_action  | 0        |
+|    sum_opened_door   | 0        |
+|    sum_picked_up     | 0        |
+|    sum_ran_into_lava | 56       |
+|    sum_reached_goal  | 4        |
+| rollout/             |          |
+|    ep_len_mean       | 34.1     |
+|    ep_rew_mean       | -0.867   |
+| time/                |          |
+|    fps               | 5        |
+|    iterations        | 1        |
+|    time_elapsed      | 346      |
+|    total_timesteps   | 2048     |
+-----------------------------------
+------------------------------------------
+| info/                   |              |
+|    no_shield_action     | 0            |
+|    sum_opened_door      | 0            |
+|    sum_picked_up        | 0            |
+|    sum_ran_into_lava    | 95           |
+|    sum_reached_goal     | 6            |
+| rollout/                |              |
+|    ep_len_mean          | 40.2         |
+|    ep_rew_mean          | -0.88        |
+| time/                   |              |
+|    fps                  | 3            |
+|    iterations           | 2            |
+|    time_elapsed         | 1143         |
+|    total_timesteps      | 4096         |
+| train/                  |              |
+|    approx_kl            | 0.012041815  |
+|    clip_fraction        | 0.157        |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -1.3         |
+|    explained_variance   | -0.008573294 |
+|    learning_rate        | 0.0003       |
+|    loss                 | -0.00529     |
+|    n_updates            | 10           |
+|    policy_gradient_loss | -0.0115      |
+|    value_loss           | 0.0607       |
+------------------------------------------

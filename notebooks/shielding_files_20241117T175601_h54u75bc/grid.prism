@@ -1,0 +1,76 @@
+smg
+
+formula AgentCannotMoveEastWall = (colAgent=9&rowAgent=1) | (colAgent=9&rowAgent=2) | (colAgent=9&rowAgent=3) | (colAgent=9&rowAgent=4) | (colAgent=9&rowAgent=6) | (colAgent=9&rowAgent=7) | (colAgent=9&rowAgent=5);
+formula AgentCannotMoveNorthWall = (colAgent=1&rowAgent=1) | (colAgent=2&rowAgent=1) | (colAgent=3&rowAgent=1) | (colAgent=4&rowAgent=1) | (colAgent=6&rowAgent=1) | (colAgent=7&rowAgent=1) | (colAgent=8&rowAgent=1) | (colAgent=9&rowAgent=1) | (colAgent=5&rowAgent=1);
+formula AgentCannotMoveSouthWall = (colAgent=1&rowAgent=7) | (colAgent=2&rowAgent=7) | (colAgent=3&rowAgent=7) | (colAgent=4&rowAgent=7) | (colAgent=5&rowAgent=7) | (colAgent=6&rowAgent=7) | (colAgent=7&rowAgent=7) | (colAgent=8&rowAgent=7) | (colAgent=9&rowAgent=7);
+formula AgentCannotMoveWestWall = (colAgent=1&rowAgent=1) | (colAgent=1&rowAgent=2) | (colAgent=1&rowAgent=3) | (colAgent=1&rowAgent=4) | (colAgent=1&rowAgent=5) | (colAgent=1&rowAgent=6) | (colAgent=1&rowAgent=7);
+formula AgentIsOnSlippery = false;
+formula AgentIsOnLava = (colAgent=3&rowAgent=3) | (colAgent=4&rowAgent=3) | (colAgent=5&rowAgent=3) | (colAgent=6&rowAgent=3) | (colAgent=7&rowAgent=3) | (colAgent=3&rowAgent=4) | (colAgent=4&rowAgent=4) | (colAgent=5&rowAgent=4) | (colAgent=6&rowAgent=4) | (colAgent=7&rowAgent=4);
+formula AgentIsOnGoal = (colAgent=5&rowAgent=1);
+formula BlueCannotMoveEastWall = (colBlue=9&rowBlue=1) | (colBlue=9&rowBlue=2) | (colBlue=9&rowBlue=3) | (colBlue=9&rowBlue=4) | (colBlue=9&rowBlue=6) | (colBlue=9&rowBlue=7) | (colBlue=9&rowBlue=5);
+formula BlueCannotMoveNorthWall = (colBlue=1&rowBlue=1) | (colBlue=2&rowBlue=1) | (colBlue=3&rowBlue=1) | (colBlue=4&rowBlue=1) | (colBlue=6&rowBlue=1) | (colBlue=7&rowBlue=1) | (colBlue=8&rowBlue=1) | (colBlue=9&rowBlue=1) | (colBlue=5&rowBlue=1);
+formula BlueCannotMoveSouthWall = (colBlue=1&rowBlue=7) | (colBlue=2&rowBlue=7) | (colBlue=3&rowBlue=7) | (colBlue=4&rowBlue=7) | (colBlue=5&rowBlue=7) | (colBlue=6&rowBlue=7) | (colBlue=7&rowBlue=7) | (colBlue=8&rowBlue=7) | (colBlue=9&rowBlue=7);
+formula BlueCannotMoveWestWall = (colBlue=1&rowBlue=1) | (colBlue=1&rowBlue=2) | (colBlue=1&rowBlue=3) | (colBlue=1&rowBlue=4) | (colBlue=1&rowBlue=5) | (colBlue=1&rowBlue=6) | (colBlue=1&rowBlue=7);
+formula BlueIsOnSlippery = false;
+formula BlueIsOnLava = (colBlue=3&rowBlue=3) | (colBlue=4&rowBlue=3) | (colBlue=5&rowBlue=3) | (colBlue=6&rowBlue=3) | (colBlue=7&rowBlue=3) | (colBlue=3&rowBlue=4) | (colBlue=4&rowBlue=4) | (colBlue=5&rowBlue=4) | (colBlue=6&rowBlue=4) | (colBlue=7&rowBlue=4);
+formula BlueIsOnGoal = (colBlue=5&rowBlue=1);
+formula collision = (colAgent=colBlue&rowAgent=rowBlue);
+label "collision" = collision;
+init
+  true
+endinit
+
+
+module Agent
+  colAgent : [1..9];
+  rowAgent : [1..7];
+  viewAgent : [0..3];
+
+  [Agent_turn_right] !AgentIsOnLava &true -> 1.000000: (viewAgent'=mod(viewAgent+1,4));
+  [Agent_turn_left] !AgentIsOnLava &viewAgent>0 -> 1.000000: (viewAgent'=viewAgent-1);
+  [Agent_turn_left] !AgentIsOnLava &viewAgent=0 -> 1.000000: (viewAgent'=3);
+  [Agent_move_North] viewAgent=3 & !AgentIsOnLava & !AgentIsOnGoal & !AgentCannotMoveNorthWall -> 1.000000: (rowAgent'=rowAgent-1);
+  [Agent_move_East] viewAgent=0 & !AgentIsOnLava & !AgentIsOnGoal & !AgentCannotMoveEastWall -> 1.000000: (colAgent'=colAgent+1);
+  [Agent_move_South] viewAgent=1 & !AgentIsOnLava & !AgentIsOnGoal & !AgentCannotMoveSouthWall -> 1.000000: (rowAgent'=rowAgent+1);
+  [Agent_move_West] viewAgent=2 & !AgentIsOnLava & !AgentIsOnGoal & !AgentCannotMoveWestWall -> 1.000000: (colAgent'=colAgent-1);
+  [Agent_on_goal]AgentIsOnGoal & clock=0 -> true;
+endmodule
+
+
+module Blue
+  colBlue : [1..9];
+  rowBlue : [1..7];
+  viewBlue : [0..3];
+
+  [Blue_turn_right] !BlueIsOnLava &true -> 1.000000: (viewBlue'=mod(viewBlue+1,4));
+  [Blue_turn_left] !BlueIsOnLava &viewBlue>0 -> 1.000000: (viewBlue'=viewBlue-1);
+  [Blue_turn_left] !BlueIsOnLava &viewBlue=0 -> 1.000000: (viewBlue'=3);
+  [Blue_move_North] viewBlue=3 & !BlueIsOnLava & !BlueCannotMoveNorthWall -> 1.000000: (rowBlue'=rowBlue-1);
+  [Blue_move_East] viewBlue=0 & !BlueIsOnLava & !BlueCannotMoveEastWall -> 1.000000: (colBlue'=colBlue+1);
+  [Blue_move_South] viewBlue=1 & !BlueIsOnLava & !BlueCannotMoveSouthWall -> 1.000000: (rowBlue'=rowBlue+1);
+  [Blue_move_West] viewBlue=2 & !BlueIsOnLava & !BlueCannotMoveWestWall -> 1.000000: (colBlue'=colBlue-1);
+endmodule
+
+
+module Arbiter
+  clock : [0..1];
+  [Agent_turn_left] clock=0 -> (clock'=1) ;
+  [Agent_turn_right] clock=0 -> (clock'=1) ;
+  [Agent_move_East] clock=0 -> (clock'=1) ;
+  [Agent_move_North] clock=0 -> (clock'=1) ;
+  [Agent_move_South] clock=0 -> (clock'=1) ;
+  [Agent_move_West] clock=0 -> (clock'=1) ;
+  [Blue_turn_left] clock=1 -> (clock'=0) ;
+  [Blue_turn_right] clock=1 -> (clock'=0) ;
+  [Blue_move_East] clock=1 -> (clock'=0) ;
+  [Blue_move_North] clock=1 -> (clock'=0) ;
+  [Blue_move_South] clock=1 -> (clock'=0) ;
+  [Blue_move_West] clock=1 -> (clock'=0) ;
+endmodule
+
+player Agent
+	[Agent_turn_left], [Agent_turn_right], [Agent_move_East], [Agent_move_North], [Agent_move_South], [Agent_move_West], [Agent_on_goal]
+endplayer
+player Blue
+	[Blue_turn_left], [Blue_turn_right], [Blue_move_East], [Blue_move_North], [Blue_move_South], [Blue_move_West]
+endplayer

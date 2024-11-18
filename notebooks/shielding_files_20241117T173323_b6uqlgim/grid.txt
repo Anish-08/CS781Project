@@ -1,0 +1,30 @@
+WGWGWGWGWGWGWGWGWGWGWGWG
+WG  nBnBnB          GGWG
+WG        eB        XRWG
+WG        eB  VR      WG
+WG                    WG
+WG                    WG
+WG                    WG
+WG                    WG
+WG                    WG
+WG                    WG
+WG            VRVRVRVRWG
+WGWGWGWGWGWGWGWGWGWGWGWG
+------------------------
+WGWGWGWGWGWGWGWGWGWGWGWG
+WG  nBnBnB            WG
+WG        eB          WG
+WG        eB          WG
+WG                    WG
+WG                    WG
+WG                    WG
+WG                    WG
+WG                    WG
+WG                    WG
+WG                    WG
+WGWGWGWGWGWGWGWGWGWGWGWG
+------------------------
+------------------------
+FaultProbability:0.0
+ProbTurnIntended:1.0
+ProbForwardIntended:1.0

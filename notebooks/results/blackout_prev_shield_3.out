@@ -1,0 +1,92 @@
+2024-11-16 21:16:30.534769: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1731791790.556840  382712 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1731791790.563650  382712 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2024-11-16 21:16:30.588024: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+
+
+
+
+
+
+
+
+
+
+pygame 2.6.1 (SDL 2.28.4, Python 3.10.4)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Starting the training
+<PIL.Image.Image image mode=RGB size=480x480 at 0x7A34FAFFA920>
+Directory created successfully: /opt/notebooks/shielding_files_20241116T211635_axx1f9zi
+Computing new shield
+LOG: Starting with explicit model creation...
+Elapsed time is 0.05421257019042969 seconds.
+LOG: Starting with model checking...
+Elapsed time is 0.002290964126586914 seconds.
+LOG: Starting to translate shield...
+Elapsed time is 0.09768891334533691 seconds.
+Directory created successfully: /opt/notebooks/shielding_files_20241116T211635_v7oq0nq0
+Computing new shield
+LOG: Starting with explicit model creation...
+Elapsed time is 0.05222630500793457 seconds.
+LOG: Starting with model checking...
+Elapsed time is 0.0020751953125 seconds.
+LOG: Starting to translate shield...
+Elapsed time is 0.09364557266235352 seconds.
+Directory created successfully: /opt/notebooks/shielding_files_20241116T211635_wy81wdo9
+Computing new shield
+LOG: Starting with explicit model creation...
+Elapsed time is 0.062479257583618164 seconds.
+LOG: Starting with model checking...
+Elapsed time is 0.002633810043334961 seconds.
+LOG: Starting to translate shield...
+Elapsed time is 0.09357643127441406 seconds.
+Directory created successfully: /opt/notebooks/shielding_files_20241116T211635_bgn5spbf
+Computing new shield
+LOG: Starting with explicit model creation...
+Elapsed time is 0.05244946479797363 seconds.
+LOG: Starting with model checking...
+Elapsed time is 0.002018451690673828 seconds.
+LOG: Starting to translate shield...
+Elapsed time is 0.09424018859863281 seconds.
+Directory created successfully: /opt/notebooks/shielding_files_20241116T211635_ddtjg8vo
+Computing new shield
+LOG: Starting with explicit model creation...
+Elapsed time is 0.05006575584411621 seconds.
+LOG: Starting with model checking...
+Elapsed time is 0.0020198822021484375 seconds.
+LOG: Starting to translate shield...
+Elapsed time is 0.09361100196838379 seconds.
+Image saved as shield_overlay_image.png
+The shield for shield_value = 0.0
+Image saved as shield_overlay_image.png
+The shield for shield_value = 0.9
+Image saved as shield_overlay_image.png
+The shield for shield_value = 0.99
+Image saved as shield_overlay_image.png
+The shield for shield_value = 0.999
+Image saved as shield_overlay_image.png
+The shield for shield_value = 1.0
+Training with shield:
+Image saved as shield_overlay_image.png
+Using cpu device
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+-----------------------------------
+| info/                |          |
+|    no_shield_action  | 0        |
+|    sum_opened_door   | 0        |
+|    sum_picked_up     | 0        |
+|    sum_ran_into_lava | 54       |
+|    sum_reached_goal  | 4        |
+| rollout/             |          |
+|    ep_len_mean       | 34.7     |
+|    ep_rew_mean       | -0.862   |
+| time/                |          |
+|    fps               | 6        |
+|    iterations        | 1        |
+|    time_elapsed      | 315      |
+|    total_timesteps   | 2048     |
+-----------------------------------
