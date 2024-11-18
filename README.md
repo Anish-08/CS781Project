@@ -1,7 +1,7 @@
 # CS781 Project 
 ## Shield Synthesis with Blackouts
 
-Github Link: 
+Github Link : 
 
 Inside the docker image for tempest, replace notebooks folder by our notebooks folder and inside it run the code using 
 
