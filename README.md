@@ -1,6 +1,7 @@
 # CS781 Project 
 ## Shield Synthesis with Blackouts
-## Github Link: 
+## [Github Link](https://github.com/Anish-08/CS781Project.git)
+
 ## Steps to run the code:
 To activate the docker environment, in the cloned tempest directory, run ```run_using_docker.sh```. It gives the docker environment named ```tempest_development```. 
 Attach to this docker image.
