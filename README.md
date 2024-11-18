@@ -2,7 +2,9 @@
 ## Shield Synthesis with Blackouts
 
 ## Steps to run the code:
-To activate the docker environment, in the cloned tempest directory, run ```run_using_docker.sh```. It gives the docker environment named ```tempest_development```. Attach to this docker image
+To activate the docker environment, in the cloned tempest directory, run ```run_using_docker.sh```. It gives the docker environment named ```tempest_development```. 
+Attach to this docker image.
+
 Inside the docker image for tempest : ```tempest_development``` which is activated , replace notebooks folder by our notebooks folder and inside it run the code using 
 
 ```python3 FaultyActions.py```
